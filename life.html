@@ -24,11 +24,24 @@
     <div id="timeline-embed"></div>
 
     <script type="text/javascript">
+    var j = {
+      "timeline":
+        {
+            "headline":"Sh*t People Say",
+            "type":"default",
+            "text":"People say stuff here over me",
+            "startDate":"2012,1,26",
+            "date": [
+            ]
+      }
+    }
     var timeline_config = {
         width: "100%",
         height: "100%",
         source: 'life.json',
-        lang:"en"
+        // source: j,
+        lang:"en",
+        debug: true,
     }
     </script>
 
@@ -37,7 +50,7 @@
 </body>
    <script type="text/javascript" src="js/storyjs-embed.js"></script>
     <!-- and then one of either -->
-    <script type="text/javascript" src="js/timeline.js"></script>
+    <script type="text/javascript" src="js/timeline.js" defer></script>
 
     <!-- but no need for both -->
 </html>
