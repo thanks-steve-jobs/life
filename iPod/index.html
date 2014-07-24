@@ -1,0 +1,1128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>iPod - A tribute to Steve Jobs</title>
+</head>
+<meta name="viewport" content="width=500, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--number-based width or "device-width"-->
+<meta name="description" content="Try the original iPod online." />
+
+
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery.knob.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jqClock.js"></script>
+<script src="js/jquery.calendar-widget.js"></script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=209491515766879";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<link href="css/style.css" rel="stylesheet"/>
+<link rel="image_src" href="iPod.png" /> 
+
+<body>
+<div id="bar">
+
+<p><a target="_blank" href="http://amzn.to/1c4Ur6q">Here's the true legacy of the first iPod :)</a>
+<!--
+
+<img src="https://ir-na.amazon-adsystem.com/e/ir?t=inventsoluti-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<p><a href="http://inventikasolutions.com/1000-songs-in-your-pocket-now-in-html5">Click here to read the story of this iPod.</a>
+<p>Take a look at our latest project, <a title="website design mumbai" href="http://inventikasolutions.com/daeglo-your-blog-on-android">Daeglo</a>
+-->
+</div>
+
+<div id="footer">
+<div class="fb-like" data-href="https://www.facebook.com/inventikasolutions" data-send="true" data-layout="button_count" data-width="500" data-show-faces="true"></div>
+</div>
+<div id="container">
+	<div id="ipod">
+		<div id="screen">
+			<div id="playindicator"></div>
+			<div id="pauseindicator">
+				<div class="pausebar"></div>
+				<div class="pausebar"></div>
+			</div>
+			
+		
+			<div class="batterytip"></div>
+			<div class="battery">||||</div>
+			
+		<div id="homemenu" class="tile">
+			<div class="title">
+				<span>iPod</span> 
+			</div>
+			<ul>
+			<a href="#playlists"><li>Playlists</li>
+			<span class="arrow">></span></a>
+			<a href="#browse"><li>Browse</li>
+			<span class="arrow">></span></a>
+			<a href="#extras"><li>Extras</li>
+			<span class="arrow">></span></a>
+			<a href="#settings"><li>Settings</li>
+			<span class="arrow">></span></a>
+			<a href="#about"><li>About</li>
+			<span class="arrow">></span></a>
+			<a href="#audioplayer"><li>Now Playing</li>
+			<span class="arrow">></span></a>
+			</ul>
+		</div>
+		
+		<div id="playlists" class="tile">
+			<div class="title">
+				<span>Playlists</span> 
+			</div>
+			<ul>
+			<a href="#favorites"><li>Favorites</li>
+			<span class="arrow">></span></a>
+			<a href="#mondaymorning"><li>Monday Morning</li>
+			<span class="arrow">></span></a>
+			<!--
+			<a href="#playlists"><li>Party Mix</li></a>
+			<a href="#playlists"><li>Road Trip</li></a>
+			-->
+			</ul>
+		</div>
+		
+		<div id="browse" class="tile">
+			<div class="title">
+				<span>Browse</span> 
+			</div>
+			<ul>
+			<a href="#artists"><li>Artist</li>
+			<span class="arrow">></span></a>
+			<a href="#album"><li>Album</li>
+			<span class="arrow">></span></a>
+			<a href="#title"><li>Title</li>
+			<span class="arrow">></span></a>
+			<a href="#genre"><li>Genre</li>
+			<span class="arrow">></span></a>
+			<!--
+			<a href="#composer"><li>Composer</li>
+			<span class="arrow">></span></a>
+			-->
+			</ul>
+		</div>
+		
+		<div id="extras" class="tile">
+			<div class="title">
+				<span>Extras</span> 
+			</div>
+			<ul>
+			<a href="#clock"><li>Clock</li></a>
+			<a href="#contacts"><li>Contacts</li></a>
+			<a href="#calendar"><li>Calendar</li></a>
+			<!--<a href="#game"><li>Game</li></a>-->
+			</ul>
+		</div>
+		
+		<div id="settings" class="tile">
+			<div class="title">
+				<span>Settings</span> 
+			</div>
+			<ul>
+			<a href="#cookie"><li>Shuffle</li></a>
+			<a href="#cookie"><li>Repeat</li></a>
+			<a href="#cookie"><li>Backlight Timer</li></a>
+			<a href="#cookie"><li>Contrast</li></a>
+			<a href="#cookie"><li>Clicker</li></a>
+			<a href="#cookie"><li>Sleep Timer</li></a>
+			</ul>
+		</div>
+
+
+<div id="artists" class="tile">
+			<div class="title">
+				<span>Artists</span> 
+			</div>
+			<ul>
+			<!--
+			<a href="#artists-all"><li>All</li>
+			<span class="arrow">></span></a>
+			-->
+			<a href="#artists-joshwoodward"><li>Josh Woodward</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-blueducks"><li>Blue Ducks</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-blankandkytt"><li>Blank &amp; Kytt</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-thephoenixtrap"><li>The Phoenix Trap</li>
+			<span class="arrow">></span></a>
+</div>
+
+
+<!--artist-->
+<div id="artists-joshwoodward" class="tile">
+			<div class="title">
+				<span>Josh Woodward</span> 
+			</div>
+			<ul>
+			<a href="#artists-joshwoodward-all"><li>All</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-joshwoodward-tw"><li>The Wake</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-joshwoodward-ashes"><li>Ashes</li>
+			<span class="arrow">></span></a>
+			</ul>
+		</div>
+		
+<div id="artists-blueducks" class="tile">
+			<div class="title">
+				<span>Blue Ducks</span> 
+			</div>
+			<ul>
+			<a href="#artists-blueducks-six"><li>All</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-blueducks-six"><li>Six</li>
+			<span class="arrow">></span></a>
+			</ul>
+		</div>
+		
+<div id="artists-blankandkytt" class="tile">
+			<div class="title">
+				<span>Blank &amp; Kytt</span> 
+			</div>
+			<ul>
+			<a href="#artists-blankandkytt-hcs"><li>All</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-blankandkytt-hcs"><li>Heavy, Crazy, Serious</li>
+			<span class="arrow">></span></a>
+			</ul>
+		</div>
+		
+<div id="artists-thephoenixtrap" class="tile">
+			<div class="title">
+				<span>The Phoenix Trap</span> 
+			</div>
+			<ul>
+			<a href="#artists-thephoenixtrap-thephoenixtrap"><li>All</li>
+			<span class="arrow">></span></a>
+			<a href="#artists-thephoenixtrap-thephoenixtrap"><li>The Phoenix Trap</li>
+			<span class="arrow">></span></a>
+			</ul>
+		</div>
+			
+<!--albums-->
+			
+		<div id="artists-joshwoodward-tw" class="tile play">
+			<div class="title">
+				<span>The Wake</span> 
+			</div>
+			<ul>
+			<a href="#audioplayer" 
+			data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-01-IWillNotLetYouLetMeDown"
+			data-artist = "Josh Woodward"
+			data-album = "The Wake"
+			data-trackno = "1 of 3"
+			data-title = "I Will Not Let You Let Me Down"
+			><li>I Will Not Let You Let Me Down</li></a>
+			<a href="#audioplayer"
+			data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-02-ThisIsEverything"
+			data-artist = "Josh Woodward"
+			data-album = "The Wake"
+			data-trackno = "2 of 3"
+			data-title = "This Is Everything"
+			><li>This Is Everything</li></a>
+			<a href="#audioplayer"
+			data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-07-InvisibleLight"
+			data-artist = "Josh Woodward"
+			data-album = "The Wake"
+			data-trackno = "3 of 3"
+			data-title = "Invisible Light"
+			><li>Invisible Light</li></a>
+			
+			</ul>
+		</div>
+
+
+		<div id="artists-joshwoodward-ashes" class="tile play">
+			<div class="title">
+				<span>Ashes</span> 
+			</div>
+			<ul>
+			<a href="#audioplayer" 
+			data-url="song/josh-wood/ashes/JoshWoodward-Ashes-01-LetItIn"
+			data-artist = "Josh Woodward"
+			data-album = "Ashes"
+			data-trackno = "1 of 2"
+			data-title = "Let It In"
+			><li>Let It In</li></a>
+			<a href="#audioplayer"
+			data-url="song/josh-wood/ashes/JoshWoodward-Ashes-09-Pompeii"
+			data-artist = "Josh Woodward"
+			data-album = "Ashes"
+			data-trackno = "2 of 2"
+			data-title = "Pompeii"
+			><li>Pompeii</li></a>
+			
+			</ul>
+		</div>
+
+
+
+
+		<div id="artists-joshwoodward-all" class="tile play">
+			<div class="title">
+				<span>Josh Woodward</span> 
+			</div>
+			<ul>
+			<a href="#audioplayer" 
+			data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-01-IWillNotLetYouLetMeDown"
+			data-artist = "Josh Woodward"
+			data-album = "The Wake"
+			data-trackno = "1 of 5"
+			data-title = "I Will Not Let You Let Me Down"
+			><li>I Will Not Let You Let Me Down</li></a>
+			<a href="#audioplayer"
+			data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-02-ThisIsEverything"
+			data-artist = "Josh Woodward"
+			data-album = "The Wake"
+			data-trackno = "2 of 5"
+			data-title = "This Is Everything"
+			><li>This Is Everything</li></a>
+			<a href="#audioplayer"
+			data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-07-InvisibleLight"
+			data-artist = "Josh Woodward"
+			data-album = "The Wake"
+			data-trackno = "3 of 5"
+			data-title = "Invisible Light"
+			><li>Invisible Light</li></a>
+			<a href="#audioplayer" 
+			data-url="song/josh-wood/ashes/JoshWoodward-Ashes-01-LetItIn"
+			data-artist = "Josh Woodward"
+			data-album = "Ashes"
+			data-trackno = "4 of 5"
+			data-title = "Let It In"
+			><li>Let It In</li></a>
+			<a href="#audioplayer"
+			data-url="song/josh-wood/ashes/JoshWoodward-Ashes-09-Pompeii"
+			data-artist = "Josh Woodward"
+			data-album = "Ashes"
+			data-trackno = "5 of 5"
+			data-title = "Pompeii"
+			><li>Pompeii</li></a>			
+			</ul>
+		</div>
+
+<!--Blue Ducks Six -->
+
+		<div id="artists-blueducks-six" class="tile play">
+			<div class="title">
+				<span>Six</span> 
+			</div>
+			<ul>
+			<a href="#audioplayer" 
+			data-url="song/blue-ducks/six/Blue_Ducks_-_02_-_Four_Floss_Five_Six"
+			data-artist = "Blue Ducks"
+			data-album = "Six"
+			data-trackno = "1 of 2"
+			data-title = "Four Floss Five Six"
+			><li>Four Floss Five Six</li></a>
+			<a href="#audioplayer"
+			data-url="song/blue-ducks/six/Blue_Ducks_-_03_-_Floss_Is_Full_Of_Surprises"
+			data-artist = "Blue Ducks"
+			data-album = "Six"
+			data-trackno = "2 of 2"
+			data-title = "Floss Is Full Of Surprises"
+			><li>Floss Is Full Of Surprises</li></a>
+			
+			</ul>
+		</div>
+
+<!--Blank & Kytt -->
+
+		<div id="artists-blankandkytt-hcs" class="tile play">
+			<div class="title">
+				<span>Heavy, Crazy, Serious</span> 
+			</div>
+			<ul>
+			<a href="#audioplayer" 
+			data-url="song/blank-and-kytt/heavy,crazy,serious/Blank__Kytt_-_02_-_Jangle"
+			data-artist = "Blank &amp; Kytt"
+			data-album = "Heavy, Crazy, Serious"
+			data-trackno = "1 of 2"
+			data-title = "Jangle"
+			><li>Jangle</li></a>
+			<a href="#audioplayer"
+			data-url="song/blank-and-kytt/heavy,crazy,serious/Blank__Kytt_-_07_-_Flava"
+			data-artist = "Blank &amp; Kytt"
+			data-album = "Heavy, Crazy, Serious"
+			data-trackno = "2 of 2"
+			data-title = "Flava"
+			><li>Flava</li></a>
+			
+			</ul>
+		</div>
+		
+<!--The Phoenix Trap -->
+
+		<div id="artists-thephoenixtrap-thephoenixtrap" class="tile play">
+			<div class="title">
+				<span>Heavy, Crazy, Serious</span> 
+			</div>
+			<ul>
+			<a href="#audioplayer" 
+			data-url="song/the-phoenix-trap/the-phoenix-trap/youre-on-fire"
+			data-artist = "The Phoenix Trap"
+			data-album = "The Phoenix Trap"
+			data-trackno = "1 of 3"
+			data-title = "You're On Fire"
+			><li>You're On Fire</li></a>
+			<a href="#audioplayer"
+			data-url="song/the-phoenix-trap/the-phoenix-trap/something-lasting"
+			data-artist = "The Phoenix Trap"
+			data-album = "The Phoenix Trap"
+			data-trackno = "2 of 3"
+			data-title = "Something Lasting"
+			><li>Something Lasting</li></a>
+			<a href="#audioplayer"
+			data-url="song/the-phoenix-trap/the-phoenix-trap/i-wish-it-would-rain"
+			data-artist = "The Phoenix Trap"
+			data-album = "The Phoenix Trap"
+			data-trackno = "3 of 3"
+			data-title = "I Wish It Would Rain"
+			><li>I Wish It Would Rain</li></a>
+			
+			</ul>
+		</div>
+
+		
+<div id="album" class="tile">
+	<div class="title">
+		<span>Albums</span> 
+	</div>
+	<ul>
+	<a href="#artists-joshwoodward-tw"><li>The Wake</li>
+	<span class="arrow">></span></a>
+	<a href="#artists-joshwoodward-ashes"><li>Ashes</li>
+	<span class="arrow">></span></a>
+	
+	<a href="#artists-blueducks-six"><li>Six</li>
+	<span class="arrow">></span></a>
+	
+	<a href="#artists-blankandkytt-hcs"><li>Heavy, Crazy, Serious</li>
+	<span class="arrow">></span></a>
+	
+	<a href="#artists-thephoenixtrap-thephoenixtrap"><li>The Phoenix Trap</li>
+	<span class="arrow">></span></a>
+	
+	</ul>
+
+</div>
+
+<!-- Songs-->
+<div id="title" class="tile play">
+	<div class="title">
+		<span>Songs</span> 
+	</div>
+	<ul>
+		<a href="#audioplayer" 
+		data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-01-IWillNotLetYouLetMeDown"
+		data-artist = "Josh Woodward"
+		data-album = "The Wake"
+		data-trackno = "1 of 3"
+		data-title = "I Will Not Let You Let Me Down"
+		><li>I Will Not Let You Let Me Down</li></a>
+		<a href="#audioplayer"
+		data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-02-ThisIsEverything"
+		data-artist = "Josh Woodward"
+		data-album = "The Wake"
+		data-trackno = "2 of 3"
+		data-title = "This Is Everything"
+		><li>This Is Everything</li></a>
+		<a href="#audioplayer"
+		data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-07-InvisibleLight"
+		data-artist = "Josh Woodward"
+		data-album = "The Wake"
+		data-trackno = "3 of 3"
+		data-title = "Invisible Light"
+		><li>Invisible Light</li></a>
+		<a href="#audioplayer" 
+		data-url="song/josh-wood/ashes/JoshWoodward-Ashes-01-LetItIn"
+		data-artist = "Josh Woodward"
+		data-album = "Ashes"
+		data-trackno = "1 of 2"
+		data-title = "Let It In"
+		><li>Let It In</li></a>
+		<a href="#audioplayer"
+		data-url="song/josh-wood/ashes/JoshWoodward-Ashes-09-Pompeii"
+		data-artist = "Josh Woodward"
+		data-album = "Ashes"
+		data-trackno = "2 of 2"
+		data-title = "Pompeii"
+		><li>Pompeii</li></a>
+		<a href="#audioplayer" 
+		data-url="song/blue-ducks/six/Blue_Ducks_-_02_-_Four_Floss_Five_Six"
+		data-artist = "Blue Ducks"
+		data-album = "Six"
+		data-trackno = "1 of 2"
+		data-title = "Four Floss Five Six"
+		><li>Four Floss Five Six</li></a>
+		<a href="#audioplayer"
+		data-url="song/blue-ducks/six/Blue_Ducks_-_03_-_Floss_Is_Full_Of_Surprises"
+		data-artist = "Blue Ducks"
+		data-album = "Six"
+		data-trackno = "2 of 2"
+		data-title = "Floss Is Full Of Surprises"
+		><li>Floss Is Full Of Surprises</li></a>
+		<a href="#audioplayer" 
+		data-url="song/blank-and-kytt/heavy,crazy,serious/Blank__Kytt_-_02_-_Jangle"
+		data-artist = "Blank &amp; Kytt"
+		data-album = "Heavy, Crazy, Serious"
+		data-trackno = "1 of 2"
+		data-title = "Jangle"
+		><li>Jangle</li></a>
+		<a href="#audioplayer"
+		data-url="song/blank-and-kytt/heavy,crazy,serious/Blank__Kytt_-_07_-_Flava"
+		data-artist = "Blank &amp; Kytt"
+		data-album = "Heavy, Crazy, Serious"
+		data-trackno = "2 of 2"
+		data-title = "Flava"
+		><li>Flava</li></a>
+		<a href="#audioplayer" 
+		data-url="song/the-phoenix-trap/the-phoenix-trap/youre-on-fire"
+		data-artist = "The Phoenix Trap"
+		data-album = "The Phoenix Trap"
+		data-trackno = "1 of 3"
+		data-title = "You're On Fire"
+		><li>You're On Fire</li></a>
+		<a href="#audioplayer"
+		data-url="song/the-phoenix-trap/the-phoenix-trap/something-lasting"
+		data-artist = "The Phoenix Trap"
+		data-album = "The Phoenix Trap"
+		data-trackno = "2 of 3"
+		data-title = "Something Lasting"
+		><li>Something Lasting</li></a>
+		<a href="#audioplayer"
+		data-url="song/the-phoenix-trap/the-phoenix-trap/i-wish-it-would-rain"
+		data-artist = "The Phoenix Trap"
+		data-album = "The Phoenix Trap"
+		data-trackno = "3 of 3"
+		data-title = "I Wish It Would Rain"
+		><li>I Wish It Would Rain</li></a>
+	</ul>
+</div>
+<!--Genres -->		
+<div id="genre" class="tile">
+	<div class="title">
+		<span>Genre</span> 
+	</div>
+	<ul>
+	<a href="#genre-alternative"><li>Alternative</li>
+	<span class="arrow">></span></a>
+	<a href="#genre-rock"><li>Rock</li>
+	<span class="arrow">></span></a>
+	<a href="#genre-hiphop"><li>Hip-Hop Beats</li>
+	<span class="arrow">></span></a>
+	</ul>
+</div>	
+<!--genre alternative -->		
+<div id="genre-alternative" class="tile play">
+	<div class="title">
+		<span>Alternative</span> 
+	</div>
+	<ul>
+		<a href="#audioplayer"
+		data-url="song/the-phoenix-trap/the-phoenix-trap/i-wish-it-would-rain"
+		data-artist = "The Phoenix Trap"
+		data-album = "The Phoenix Trap"
+		data-trackno = "1 of 2"
+		data-title = "I Wish It Would Rain"
+		><li>I Wish It Would Rain</li></a>	
+		
+		<a href="#audioplayer"
+		data-url="song/the-phoenix-trap/the-phoenix-trap/something-lasting"
+		data-artist = "The Phoenix Trap"
+		data-album = "The Phoenix Trap"
+		data-trackno = "2 of 2"
+		data-title = "Something Lasting"
+		><li>Something Lasting</li></a>
+	</ul>
+</div>	
+<!--genre rock -->		
+<div id="genre-rock" class="tile play">
+	<div class="title">
+		<span>Rock</span> 
+	</div>
+	<ul>
+		<a href="#audioplayer" 
+		data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-01-IWillNotLetYouLetMeDown"
+		data-artist = "Josh Woodward"
+		data-album = "The Wake"
+		data-trackno = "1 of 2"
+		data-title = "I Will Not Let You Let Me Down"
+		><li>I Will Not Let You Let Me Down</li></a>
+		
+		<a href="#audioplayer"
+		data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-02-ThisIsEverything"
+		data-artist = "Josh Woodward"
+		data-album = "The Wake"
+		data-trackno = "2 of 2"
+		data-title = "This Is Everything"
+		><li>This Is Everything</li></a>
+	</ul>
+</div>	
+
+<!--genre hiphop -->		
+<div id="genre-hiphop" class="tile play">
+	<div class="title">
+		<span>Hip Hop</span> 
+	</div>
+	<ul>
+		<a href="#audioplayer" 
+		data-url="song/blue-ducks/six/Blue_Ducks_-_02_-_Four_Floss_Five_Six"
+		data-artist = "Blue Ducks"
+		data-album = "Six"
+		data-trackno = "1 of 3"
+		data-title = "Four Floss Five Six"
+		><li>Four Floss Five Six</li></a>
+		
+		<a href="#audioplayer"
+		data-url="song/blue-ducks/six/Blue_Ducks_-_03_-_Floss_Is_Full_Of_Surprises"
+		data-artist = "Blue Ducks"
+		data-album = "Six"
+		data-trackno = "2 of 3"
+		data-title = "Floss Is Full Of Surprises"
+		><li>Floss Is Full Of Surprises</li></a>
+		
+		<a href="#audioplayer"
+		data-url="song/blank-and-kytt/heavy,crazy,serious/Blank__Kytt_-_07_-_Flava"
+		data-artist = "Blank &amp; Kytt"
+		data-album = "Heavy, Crazy, Serious"
+		data-trackno = "3 of 3"
+		data-title = "Flava"
+		><li>Flava</li></a>
+	</ul>
+</div>	
+
+
+<!--Favorites -->
+<div id="favorites" class="tile play">
+	<div class="title">
+		<span>Favorites</span> 
+	</div>
+	<ul>
+		<a href="#audioplayer" 
+		data-url="song/josh-wood/the-wake/JoshWoodward-TheWake-01-IWillNotLetYouLetMeDown"
+		data-artist = "Josh Woodward"
+		data-album = "The Wake"
+		data-trackno = "1 of 2"
+		data-title = "I Will Not Let You Let Me Down"
+		><li>I Will Not Let You Let Me Down</li></a>	
+		
+		<a href="#audioplayer"
+		data-url="song/josh-wood/ashes/JoshWoodward-Ashes-09-Pompeii"
+		data-artist = "Josh Woodward"
+		data-album = "Ashes"
+		data-trackno = "2 of 2"
+		data-title = "Pompeii"
+		><li>Pompeii</li></a>
+	</ul>		
+</div>
+
+
+<!--mondaymorning -->
+<div id="mondaymorning" class="tile play">
+	<div class="title">
+		<span>Monday Morning</span> 
+	</div>
+	<ul>
+		<a href="#audioplayer" 
+		data-url="song/blue-ducks/six/Blue_Ducks_-_02_-_Four_Floss_Five_Six"
+		data-artist = "Blue Ducks"
+		data-album = "Six"
+		data-trackno = "1 of 2"
+		data-title = "Four Floss Five Six"
+		><li>Four Floss Five Six</li></a>
+		
+		<a href="#audioplayer"
+		data-url="song/blank-and-kytt/heavy,crazy,serious/Blank__Kytt_-_07_-_Flava"
+		data-artist = "Blank &amp; Kytt"
+		data-album = "Heavy, Crazy, Serious"
+		data-trackno = "2 of 2"
+		data-title = "Flava"
+		><li>Flava</li></a>
+	</ul>
+</div>
+	
+	
+<!--About-->
+<div id="about" class="tile">
+	<div class="title">
+		<span>About</span> 
+	</div>
+	<ul>
+	This iPod is a tribute to Steve Jobs.
+	<br>
+	To read more about how this iPod was built <a href="http://inventikasolutions.com/1000-songs-in-your-pocket-now-in-html5">click here with your mouse.</a>
+	</ul>
+</div>	
+
+<!--Clock-->
+<div id="clock" class="tile">
+	<div class="title">
+		<span>Clock</span> 
+	</div>
+	
+	<div id="time">
+	</div>
+</div>
+
+<!--Contacts-->
+<div id="contacts" class="tile">
+	<div class="title">
+		<span>Contacts</span> 
+	</div>
+	<ul>
+	<li>
+		Pritesh Desai - 
+	</li>
+	<li>
+		+91 89762 36974
+	</li>
+	<li>
+		Inventika Solutions - 
+	</li>
+	<li>
+		+91 2811 7091
+	</li>
+	</ul>
+</div>
+
+
+<!--Calendar-->
+<div id="calendar" class="tile">
+	<div class="title">
+		<span>Calendar</span> 
+	</div>
+	
+	<div id="calendarr">
+	<p>Please enable Javascript to view this calendar.</p>
+	</div>
+
+</div>
+
+	
+	
+<!--Apple-->
+<div id="cookie" class="tile">
+	<div class="title">
+		<span>Cookie</span> 
+	</div>
+	<ul>
+	Nothing to see here, have an apple instead!
+	</ul>
+<pre>
+    _  /_
+  /  `''  \
+ |         |
+  \       /  
+   \__.__/
+</pre>
+</div>	
+
+	
+<!--audio player div -->		
+		<div id="audioplayer" class="tile">
+			<div class="title">
+				<span>Now Playing</span> 
+			</div>
+			<ul>
+			<li class="tracknumber"></li>
+			<li class="songtitle"></li>
+			<li class="songartist"></li>
+			<li class="albumtitle"></li>
+			<li class="timevolume">
+				<div class="timeline">
+				<span class="time"></span>
+				<div class="trackbar">
+					<div class="trackbartime"></div>
+				</div>
+				<div id="player"></div>
+				</div>
+				
+				<div class="volume">
+					<div class="volumeincr">
+					</div>
+					<div class="volumebar">
+						<div class="volumelevel"></div>
+					</div>
+					<div class="volumedecr"></div>
+				</div>
+				
+				<div class="scrolltime">
+					<div class="scrolltimebar">
+						<div class="scrolltimelevel"></div>
+						<span>&#9830;</span>
+					</div>
+				</div>
+				
+			</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		</div><!--end screen -->
+		
+		
+		<div id="clickwheel">
+		<div id="menu">menu</div>
+		
+		<div id="prev">
+			<div class="bar-left"></div>
+			<div class="arrow-left"></div>
+			<div class="arrow-left"></div>
+		</div>
+
+		<div id="next">
+			<div class="bar-right"></div>
+			<div class="arrow-right"></div>
+			<div class="arrow-right"></div>
+		</div>
+
+		<div id="play-pause">
+			<div class="bar-right gap"></div>
+			<div class="bar-right gap"></div>
+			<div class="arrow-right"></div>
+		</div>
+		
+		
+		
+		<a href="#" id="back">
+			<div class="button" id="topbutton"></div>
+		</a>
+		
+		<a href="#" id="playpausebutton">
+			<div class="button" id="bottombutton"></div>
+		</a>
+		
+		<a href="#" id="rewindbutton">
+			<div class="button" id="leftbutton"></div>
+		</a>
+		
+		<a href="#" id="fastforwardbutton">
+			<div class="button" id="rightbutton"></div>
+		</a>
+		
+		
+			
+			<div id="innerwheel">
+			
+			
+			<input type="text" value="75" class="dial" 
+			data-width="234"
+			data-cursor="true"
+			data-thickness=".9"
+			data-fgColor="#E9EDEC"
+			data-bgColor="#E9EDEC"
+			data-displayInput="true"
+			style=""
+			>	
+			
+			
+				<a href="#" id="select">
+				<div id="innerbutton">
+				</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23487585-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin MailChimp Signup Form -->
+<link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,.8);display:none;z-index:10000; }
+	#mc_embed_signup form{position:fixed; top:10%; left:60%; width:30%; margin-left:-25%; font:normal 100% Helvetica,Arial,sans-serif; font-size:14px; border-radius:4px; border:none; padding:10px 20px; background-color:#fff; color:#000; text-align:left;max-height:400px;overflow-y:visible;overflow-x:visible;
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+}
+	#mc_embed_signup a.mc_embed_close{background:transparent url(http://downloads.mailchimp.com/img/closebox.png) no-repeat; display:block; height:30px; width:30px; text-indent:-999em; position:absolute; top:-10px; right:-10px; display:none; }
+#mc_embed_signup .mc-field-group input {background: #eaeaea;}
+#mc_embed_signup .mc-field-group label {
+display: block;
+margin-bottom: 10px;
+}
+
+#mc-embedded-subscribe {
+clear: both;
+width: auto;
+display: block;
+margin: 10px 38%;
+}
+
+#mc_embed_signup h2 {font-family:serif, Georgia;}
+#mc_embed_signup .mc-field-group label {font-family:serif, Georgia;}
+.mc_button{
+
+background-color: #8C9CBF;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8C9CBF), color-stop(50%, #546A9E), color-stop(50%, #36518F), color-stop(100%, #3D5691));
+background-image: -webkit-linear-gradient(top, #8C9CBF 0%, #546A9E 50%, #36518F 50%, #3D5691 100%);
+background-image: -moz-linear-gradient(top, #8C9CBF 0%, #546A9E 50%, #36518F 50%, #3D5691 100%);
+background-image: -ms-linear-gradient(top, #8C9CBF 0%, #546A9E 50%, #36518F 50%, #3D5691 100%);
+background-image: -o-linear-gradient(top, #8C9CBF 0%, #546A9E 50%, #36518F 50%, #3D5691 100%);
+background-image: linear-gradient(top, #8C9CBF 0%, #546A9E 50%, #36518F 50%, #3D5691 100%);
+border: 1px solid #172D6E;
+border-bottom: 1px solid #0E1D45;
+border-radius: 5px;
+-webkit-box-shadow: inset 0 1px 0 0 #B1B9CB;
+box-shadow: inset 0 1px 0 0 #B1B9CB;
+color: #FFF;
+font: bold 16px/1 "helvetica neue", helvetica, arial, sans-serif;
+padding:12px 20px 12px 20px;
+text-decoration: none;
+text-align: center;
+text-shadow: 0 -1px 1px #000F4D;
+width: 150px;
+}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="http://inventikasolutions.us4.list-manage2.com/subscribe/post?u=3fe162ca3292b5775863d51d2&amp;id=43d83cdf64" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<h2>Let's keep in touch! We love creating and sharing beautiful digital art.</h2>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Enter your email here to stay in touch. We will never spam you.
+</label>
+	<input type="email" value="enter your email here" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<a href="#" id="mc_embed_close" class="mc_embed_close">Close</a>	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="mc_button"></div>
+</form>
+</div>
+<script type="text/javascript">
+var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';
+try {
+    var jqueryLoaded=jQuery;
+    jqueryLoaded=true;
+} catch(err) {
+    var jqueryLoaded=false;
+}
+var head= document.getElementsByTagName('head')[0];
+if (!jqueryLoaded) {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+    head.appendChild(script);
+    if (script.readyState && script.onload!==null){
+        script.onreadystatechange= function () {
+              if (this.readyState == 'complete') mce_preload_check();
+        }    
+    }
+}
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+head.appendChild(script);
+var err_style = '';
+try{
+    err_style = mc_custom_error_style;
+} catch(e){
+    err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
+}
+var head= document.getElementsByTagName('head')[0];
+var style= document.createElement('style');
+style.type= 'text/css';
+if (style.styleSheet) {
+  style.styleSheet.cssText = err_style;
+} else {
+  style.appendChild(document.createTextNode(err_style));
+}
+head.appendChild(style);
+setTimeout('mce_preload_check();', 250);
+
+var mce_preload_checks = 0;
+function mce_preload_check(){
+    if (mce_preload_checks>40) return;
+    mce_preload_checks++;
+    try {
+        var jqueryLoaded=jQuery;
+    } catch(err) {
+        setTimeout('mce_preload_check();', 250);
+        return;
+    }
+    try {
+        var validatorLoaded=jQuery("#fake-form").validate({});
+    } catch(err) {
+        setTimeout('mce_preload_check();', 250);
+        return;
+    }
+    mce_init_form();
+}
+function mce_init_form(){
+    jQuery(document).ready( function($) {
+      var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+      var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+      $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+      options = { url: 'http://inventikasolutions.us4.list-manage1.com/subscribe/post-json?u=3fe162ca3292b5775863d51d2&id=43d83cdf64&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+                    beforeSubmit: function(){
+                        $('#mce_tmp_error_msg').remove();
+                        $('.datefield','#mc_embed_signup').each(
+                            function(){
+                                var txt = 'filled';
+                                var fields = new Array();
+                                var i = 0;
+                                $(':text', this).each(
+                                    function(){
+                                        fields[i] = this;
+                                        i++;
+                                    });
+                                $(':hidden', this).each(
+                                    function(){
+                                        var bday = false;
+                                        if (fields.length == 2){
+                                            bday = true;
+                                            fields[2] = {'value':1970};//trick birthdays into having years
+                                        }
+                                    	if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                    		this.value = '';
+									    } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                    		this.value = '';
+									    } else {
+									        if (/\[day\]/.test(fields[0].name)){
+    	                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;									        
+									        } else {
+    	                                        this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+	                                        }
+	                                    }
+                                    });
+                            });
+                        return mce_validator.form();
+                    }, 
+                    success: mce_success_cb
+                };
+      $('#mc-embedded-subscribe-form').ajaxForm(options);
+      
+              $('#mc_embed_signup').hide();
+        cks = document.cookie.split( ';' );
+        var show=true;
+        for(i=0;i<cks.length;i++){
+            parts = cks[i].split('=');
+            if( parts[0].indexOf('MCEvilPopupClosed')!= -1 ) show = false;
+        }
+        if (show){
+            $('#mc_embed_signup a.mc_embed_close').show();
+            setTimeout( function(){ $('#mc_embed_signup').fadeIn();} , 2000);
+	        $('#mc_embed_signup a.mc_embed_close').click(function(){ mcEvilPopupClose();});
+        }
+
+        $(document).keydown(function(e){
+            if (e == null) { 
+              keycode = event.keyCode;
+            } else { 
+              keycode = e.which;
+            }
+            if(keycode == 27){
+                mcEvilPopupClose();
+            }
+        });
+
+        function mcEvilPopupClose(){
+            $('#mc_embed_signup').hide();
+            var now = new Date();
+            var expires_date = new Date( now.getTime() + 31536000000 );
+            document.cookie = 'MCEvilPopupClosed=yes;expires=' + expires_date.toGMTString()+';path=/';
+        }
+
+    });
+}
+function mce_success_cb(resp){
+    $('#mce-success-response').hide();
+    $('#mce-error-response').hide();
+    if (resp.result=="success"){
+        $('#mce-'+resp.result+'-response').show();
+        $('#mce-'+resp.result+'-response').html(resp.msg);
+        $('#mc-embedded-subscribe-form').each(function(){
+            this.reset();
+    	});
+    } else {
+        var index = -1;
+        var msg;
+        try {
+            var parts = resp.msg.split(' - ',2);
+            if (parts[1]==undefined){
+                msg = resp.msg;
+            } else {
+                i = parseInt(parts[0]);
+                if (i.toString() == parts[0]){
+                    index = parts[0];
+                    msg = parts[1];
+                } else {
+                    index = -1;
+                    msg = resp.msg;
+                }
+            }
+        } catch(e){
+            index = -1;
+            msg = resp.msg;
+        }
+        try{
+            if (index== -1){
+                $('#mce-'+resp.result+'-response').show();
+                $('#mce-'+resp.result+'-response').html(msg);            
+            } else {
+                err_id = 'mce_tmp_error_msg';
+                html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+                
+                var input_id = '#mc_embed_signup';
+                var f = $(input_id);
+                if (ftypes[index]=='address'){
+                    input_id = '#mce-'+fnames[index]+'-addr1';
+                    f = $(input_id).parent().parent().get(0);
+                } else if (ftypes[index]=='date'){
+                    input_id = '#mce-'+fnames[index]+'-month';
+                    f = $(input_id).parent().parent().get(0);
+                } else {
+                    input_id = '#mce-'+fnames[index];
+                    f = $().parent(input_id).get(0);
+                }
+                if (f){
+                    $(f).append(html);
+                    $(input_id).focus();
+                } else {
+                    $('#mce-'+resp.result+'-response').show();
+                    $('#mce-'+resp.result+'-response').html(msg);
+                }
+            }
+        } catch(e){
+            $('#mce-'+resp.result+'-response').show();
+            $('#mce-'+resp.result+'-response').html(msg);
+        }
+    }
+}
+
+</script>
+<!--End mc_embed_signup-->
+</html>
