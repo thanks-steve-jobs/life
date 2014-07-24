@@ -13,6 +13,7 @@
 <script src="js/jqClock.js"></script>
 <script src="js/jquery.calendar-widget.js"></script>
 
+<!--
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -21,6 +22,7 @@
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=209491515766879";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+-->
 
 <link href="css/style.css" rel="stylesheet"/>
 <link rel="image_src" href="iPod.png" /> 
@@ -844,6 +846,7 @@
 	
 </div>
 </body>
+<!--
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -857,6 +860,7 @@
   })();
 
 </script>
+-->
 
 <!-- Begin MailChimp Signup Form -->
 <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
@@ -914,20 +918,22 @@ width: 150px;
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
+<!--
 <div id="mc_embed_signup">
-<form action="http://inventikasolutions.us4.list-manage2.com/subscribe/post?u=3fe162ca3292b5775863d51d2&amp;id=43d83cdf64" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	<h2>Let's keep in touch! We love creating and sharing beautiful digital art.</h2>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Enter your email here to stay in touch. We will never spam you.
-</label>
-	<input type="email" value="enter your email here" name="EMAIL" class="required email" id="mce-EMAIL">
+  <form action="http://inventikasolutions.us4.list-manage2.com/subscribe/post?u=3fe162ca3292b5775863d51d2&amp;id=43d83cdf64" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <h2>Let's keep in touch! We love creating and sharing beautiful digital art.</h2>
+    <div class="mc-field-group">
+      <label for="mce-EMAIL">Enter your email here to stay in touch. We will never spam you.
+      </label>
+      <input type="email" value="enter your email here" name="EMAIL" class="required email" id="mce-EMAIL">
+    </div>
+    <a href="#" id="mc_embed_close" class="mc_embed_close">Close</a>	<div id="mce-responses" class="clear">
+      <div class="response" id="mce-error-response" style="display:none"></div>
+      <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="mc_button"></div>
+  </form>
 </div>
-<a href="#" id="mc_embed_close" class="mc_embed_close">Close</a>	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="mc_button"></div>
-</form>
-</div>
+-->
 <script type="text/javascript">
 var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';
 try {
@@ -940,7 +946,8 @@ var head= document.getElementsByTagName('head')[0];
 if (!jqueryLoaded) {
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+    //script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+    script.src = 'js/jquery.min.js';
     head.appendChild(script);
     if (script.readyState && script.onload!==null){
         script.onreadystatechange= function () {
@@ -950,7 +957,8 @@ if (!jqueryLoaded) {
 }
 var script = document.createElement('script');
 script.type = 'text/javascript';
-script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+//script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+script.src = 'js/jquery.form-n-validate.js';
 head.appendChild(script);
 var err_style = '';
 try{

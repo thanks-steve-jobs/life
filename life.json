@@ -1,51 +1,72 @@
 {
-	"timeline":
-	  {
-        "headline":"Sh*t People Say",
-        "type":"default",
-		"text":"People say stuff here over me",
-		"startDate":"2012,1,26",
-        "date": [
-            {
-                "startDate":"2011,12,12",
-				"endDate":"2012,1,27",
-                "headline":"Vine",
-                "text":"<a href='http://www.google.com'>Vine Test</a>",
-                "asset":
-                {
-                    "media":"https://vine.co/v/b55LOA1dgJU",
-                    "credit":"",
-                    "caption":"happy for now what"
-                }
-            },
-            {
-            	"startDate":"2012,1,30",
-				"endDate":"2012,2,27",
-                "headline":"音樂播放：Soundcloud",
-                "text":"",
-                "asset":
-                {
-                    "media":"https://soundcloud.com/leagueoflegends/vi",
-                    "credit":"",
-                    "caption":"happy for now what"
-                }
-            },
-            {
-            	"startDate":"2012,2,28",
-				"endDate":"2012,3.15",
-                "headline":"動圖測試",
-                "text":"",
-                "asset":
-                {
-                    "media":"img/jobs-born.gif",
-                    "credit":"",
-                    "caption":"happy for now what"
-                }
-            }
-
-            
-        ]
-            
-
-	}
+  "timeline":
+  {
+    "headline":"Sh*t People Say",
+    "type":"default",
+    "text":"People say stuff here over me",
+    "startDate":"2012,1,26",
+    "date":
+    [
+      {
+        "startDate":"2011,12,12",
+        "endDate":"2012,1,27",
+        "headline":"Vine",
+        "text":"<a href='http://www.google.com'>Vine Test</a>",
+        "asset":
+        {
+          "media":"https://vine.co/v/b55LOA1dgJU",
+          "credit":"",
+          "caption":"happy for now what"
+        }
+      },
+      {
+        "startDate":"2012,1,30",
+        "endDate":"2012,2,27",
+        "headline":"音樂播放：Soundcloud",
+        "text":"",
+        "asset":
+        {
+          "media":"https://soundcloud.com/leagueoflegends/vi",
+          "credit":"",
+          "caption":"happy for now what"
+        }
+      },
+      {
+        "startDate":"2012,2,28",
+        "endDate":"2012,3,15",
+        "headline":"動圖測試",
+        "text":"",
+        "asset":
+        {
+          "media":"img/test.gif",
+          "credit":"",
+          "caption":"happy for now what"
+        }
+      },
+      {
+        "startDate":"2012,3,26",
+        "endDate":"2012,4,15",
+        "headline":"iPod",
+        "text":"",
+        "asset":
+        {
+          "media":"<iframe src='./demo/iPod/index.html'></iframe>",
+          "credit":"",
+          "caption":"ba ba ba ..."
+        }
+      },
+      {
+        "startDate":"2012,4,29",
+        "endDate":"2012,5,17",
+        "headline":"Breakout",
+        "text":"",
+        "asset":
+        {
+          "media":"<iframe src='./demo/breakout/index.html'></iframe>",
+          "credit":"",
+          "caption":"ba ba ba ..."
+        }
+      }
+    ]
+  }
 }
