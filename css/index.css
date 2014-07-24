@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
 * {
 	user-select: none;
 	-webkit-user-select: none;
@@ -8,11 +11,11 @@
 	/*font-family: "微軟正黑體", "Microsoft JhengHei";*/
 	font-weight: 900;
 	overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Quicksand", sans-serif, "Microsoft JhengHei";
 }
 body {
 	text-align: center;
-	font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background: #79a8ae;
 	color: #666;
 	font-size: 16px;
 	line-height: 1.5em;
@@ -24,44 +27,34 @@ body {
 	transform: translateY(-50%);
 }
 #subtitle {
+  overflow-x: hidden;
+  overflow-y: hidden;
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+  width: 100%;
+	top: 70%;
 	left: 50%;
+  transform: translateY(-50%);
 	transform: translateX(-50%);
-	/*margin-top: 3%;*/
 }
-
-.set-panel {
-	display: inline-block;
-	width: 600px;
-	height: 400px;
-	box-shadow: 3px 3px 1px #ddd;
-	border: #ddd 1px solid;
-}
-
-/*.animated { 
-    -webkit-animation-duration: 5s; 
-    animation-duration: 5s; 
+.animated { 
+    -webkit-animation-duration: 3s; 
+    animation-duration: 3s; 
     -webkit-animation-fill-mode: both; 
     animation-fill-mode: both; 
-}*/
-
-@-webkit-keyframes fadeInAndOut { 
-    0% {opacity: 0;} 
-    30% {opacity: 1;} 
-    70% {opacity: 1;} 
+}
+@-webkit-keyframes fadeOut { 
+    0% {opacity: 1;} 
+    /*70% {opacity: 1;} */
     100% {opacity: 0;} 
 } 
-@keyframes fadeInAndOut{ 
-    0% {opacity: 0;} 
-    30% {opacity: 1;} 
-    70% {opacity: 1;} 
+@keyframes fadeOut{ 
+    0% {opacity: 1;} 
+    /*70% {opacity: 1;} */
     100% {opacity: 0;} 
 } 
 .fadeOut { 
-    -webkit-animation-name: fadeInAndOut; 
-    animation-name: fadeInAndOut; 
+    -webkit-animation-name: fadeOut; 
+    animation-name: fadeOut; 
 }
 
 /*============================================================*/

@@ -10,10 +10,10 @@
 	<title>LifeZMD</title>
 </head>
 
-<body onresize='resize()' class='animated fadeOut'>
+<body class='' onresize='resize()' onclick='goSetting()'>
 	<!-- <div id='title'>LifeZMD</div> -->
-	<div id='subtitle'>created by Steven‧假伯斯</div>
-    <canvas class="canvas"></canvas>
+	<div id='subtitle'>created by Team Steven‧假伯斯</div>
+    <canvas id="canvas" class="canvas"></canvas>
 
     <div class="help" style="display:None;">?</div> 
 
@@ -60,26 +60,7 @@
                 </div>
             </div> -->
             </div>
-            </div>
-    </div>
-
-    <button>add</button>
-    <button>modify</button>
-    <button>play</button>
-    <div class="set-panel">
-        <div class="set-text">Time</div>
-        <input id="set-time" type="date" name="set-time">
-        <div class="set-text">Headline</div>
-        <input id="set-head" type="text" name="set-head">
-        <div class="set-text">Content</div>
-        <div id="set-icon-bar">
-            <img id="c-text" src="" alt="Text" onclick="setPanel.mode(0)">
-            <img id="c-image" src="" alt="Image" onclick="setPanel.mode(1)">    
-            <img id="c-video" src="" alt="Video" onclick="setPanel.mode(2)">        
         </div>
-        <input type="text" id="set-content" name="set-content">
-        <button onclick="setPanel.submit()">ok</button>
-        <button onclick="setPanel.cancel()">cancel</button>
     </div>
 
 </body>

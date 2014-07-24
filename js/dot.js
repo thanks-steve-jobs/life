@@ -25,7 +25,7 @@ var S = {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
       // S.UI.simulate('Shape|Shifter|Type|to start|#rectangle|#countdown 3||');
-      S.UI.simulate('LifeZMD');
+      S.UI.simulate('LifeZMD|(^ω^)|(ˋ皿ˊ)|(Q_Q)|(*v*)|LifeZMD');
     }
 
     S.Drawing.loop(function () {
@@ -212,7 +212,7 @@ S.UI = (function () {
         default:
           S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'What?' : current));
       }
-    }, 2000, sequence.length);
+    }, 6000, sequence.length);
   }
 
   function checkInputWidth(e) {
@@ -370,20 +370,23 @@ S.Color.prototype = {
   }
 };
 
-
+function randNum(min, max) {
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
 S.Dot = function (x, y) {
   this.p = new S.Point({
     x: x,
     y: y,
     z: 5,
-    a: 0.8,
+    a: 0.3,
     h: 0
   });
 
   this.e = 0.07;
   this.s = true;
 
-  this.c = new S.Color(0, 0, 0, this.p.a);
+  // this.c = new S.Color(randNum(0, 255), randNum(0, 255), randNum(0, 255), this.p.a);
+  this.c = new S.Color(30, 30, 30, this.p.a);
 
   this.t = this.clone();
   this.q = [];
