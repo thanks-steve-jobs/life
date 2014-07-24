@@ -2,4 +2,4 @@
 All: liveReload
 
 liveReload:
-	bundle execute guard
+	bundle exec guard
