@@ -39,7 +39,7 @@
     	ctype: 0,  // 0:text, 1:picture, 2:text
     	data: {},
 
-    	open: function() {
+    	load: function() {
 
     	},
     	mode: function(type) {
@@ -67,9 +67,36 @@
             j = JSON.stringify(dataJSON);
             console.log(dataJSON);
             console.log(j);
+
+            dataName = "lifezmd_"
+            var i = 0
+            while(true) {
+                dataName = "lifezmd_" + i.toString();
+                console.log("dataName:", dataName)
+                localJSON = localStorage.getItem(dataName)
+                console.log("localJSON:", localJSON)
+                if (localJSON == null) {
+                    console.log("add new localStorage")
+                    localStorage[dataName] = j;
+                    break;
+                }
+                else {
+                    localData = JSON.parse(localJSON);
+                    console.log(localData["timeline"]["headline"]+", vs ,"+dataJSON["timeline"]["headline"])
+                    if(localData["timeline"]["headline"] == dataJSON["timeline"]["headline"]) {
+                        localStorage[dataName] = j;
+                        break;
+                    }
+                    else {
+                        i++;
+                    }
+                }
+            }
     	},
     	cancel: function() {
-
+            document.getElementById("set-time").value = null;
+            document.getElementById("set-head").value = null;
+            document.getElementById("set-content").value = null;
     	}
     }
 </script>
@@ -92,7 +119,7 @@
 		</div>
 		<input type="text" id="set-content" name="set-content">
 		<button onclick="setPanel.submit()">ok</button>
-		<button>cancel</button>
+		<button onclick="setPanel.cancel()">cancel</button>
 	</div>
 </body>
 </html>
