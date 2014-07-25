@@ -60,7 +60,6 @@ div {
 .input-name {
 	margin-top: 10px;
 }
-
 .type-icon {
 	/*background-image: url(../img/icon/vid.png);*/
 	-webkit-box-sizing: border-box; 
@@ -118,7 +117,11 @@ input {
 input:focus{ 
 	outline: 0;
 }
-
+.ball {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;  
+	box-sizing: border-box;    
+}
 .animation-1s { 
     -webkit-animation-duration: 3s; 
     animation-duration: 3s; 
