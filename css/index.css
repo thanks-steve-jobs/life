@@ -33,6 +33,7 @@ body {
   height: auto;
   width: 100%;
 	top: 70%;
+  text-align: center;
 	left: 50%;
   transform: translateY(-50%);
 	transform: translateX(-50%);
