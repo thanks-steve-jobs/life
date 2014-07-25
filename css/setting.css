@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+* {
+	user-select: none;
+	-webkit-user-select: none;
+	user-drag: none;
+	-webkit-user-drag: none;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*font-family: "微軟正黑體", "Microsoft JhengHei";*/
+	font-weight: 900;
+	font-family: "Quicksand", sans-serif, "Microsoft JhengHei";
+	overflow-x: hidden;
+}
+
+.logo {
+	width: 300px;
+	height: auto;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+.wrapper {
+	/*text-align: center;	      */
+}
+.set-panel {
+	/*display: block;*/
+	position: relative;
+	width: 50%;
+	height: 400px;
+	left: 50%;
+	transform: translateX(-50%);
+	/*box-shadow: 3px 3px 1px #ddd;*/
+	/*border: #ddd 1px solid;*/
+}
+.set-text {
+	font-size: 30px;
+}
+.type-icon {
+	background-image: url(../img/icon/vid.png);
+	width: 60px;
+	height: 40px;
+}
+
+button {
+	width: 48px;
+	height: 48px;
+	background-color: transparent;
+	border: none;
+	background-image: url(../img/icon/vid.png);
+}
+
+input {
+	border: none;
+	border-bottom: 4px solid #666;
+}
+input:focus{ 
+	outline: 0;
+}
+
+.animation-1s { 
+    -webkit-animation-duration: 3s; 
+    animation-duration: 3s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+}
+.animation-3s { 
+    -webkit-animation-duration: 3s; 
+    animation-duration: 3s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+}
+@-webkit-keyframes fadeOut { 
+    0% {opacity: 1;} 
+    100% {opacity: 0;} 
+} 
+@keyframes fadeOut{ 
+    0% {opacity: 1;} 
+    100% {opacity: 0;} 
+} 
+@-webkit-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+@keyframes fadeIn{ 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+.fadeOut { 
+    -webkit-animation-name: fadeOut; 
+    animation-name: fadeOut; 
+}
+.fadeIn { 
+    -webkit-animation-name: fadeIn; 
+    animation-name: fadeIn; 
+}
