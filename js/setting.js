@@ -96,7 +96,7 @@ var setPanel = {
             document.body.className = 'animation-3s fadeOut';
         }, 1000 );
         setTimeout( function() {
-            document.location.href = 'life.html';
+            document.location.href = 'life_edit.html';
         }, 4000 );
     },
     clear: function() {
