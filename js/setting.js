@@ -132,7 +132,7 @@ function makeDiv(text){
     // var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
     // var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
     var posx = (((nodeNum-1)%8)*90).toFixed();
-    var posy = (500 + Math.floor((nodeNum-1)/8)*90 - divsize).toFixed();
+    var posy = (550 + Math.floor((nodeNum-1)/8)*90 - divsize).toFixed();
     
     $newdiv.css({
         'position':'absolute',
