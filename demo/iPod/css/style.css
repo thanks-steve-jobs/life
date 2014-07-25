@@ -4,7 +4,8 @@ body{
 //background:#4d4d4d;
 /*background:url("photo.jpg") no-repeat;*/
 overflow-x: hidden;
-overflow-y: auto;
+//overflow-y: auto;
+overflow-y: hidden;
 }
 
 #bar{
@@ -67,7 +68,7 @@ background: #F1F5F6;
 //background: #ECECEE url("ipod.png");
 margin:0 auto;
 //margin-top:50px;
-margin-top:20px;
+margin-top:0px;
 -webkit-border-radius: 35px;
 border-radius: 35px;
 -webkit-box-shadow:  0px 50px 41px 3px rgba(0, 0, 0, .4);
