@@ -65,7 +65,7 @@ div {
 	-webkit-box-sizing: border-box; 
 	-moz-box-sizing: border-box;  
 	box-sizing: border-box;      
-	padding-top: 5px;
+	padding: 5px 5px 5px 5px;
 	display: inline-block;
 	width: auto;
 	height: 40px;
@@ -84,8 +84,8 @@ div {
 }
 
 button {
-	width: 80px;
-	height: 80px;
+	width: 90px;
+	height: 90px;
 	font-size: 20px;
 	background-color: transparent;
 	border: none;
