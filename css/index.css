@@ -30,6 +30,7 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 	position: absolute;
+  height: auto;
   width: 100%;
 	top: 70%;
 	left: 50%;
