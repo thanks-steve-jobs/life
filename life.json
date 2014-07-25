@@ -162,42 +162,6 @@
           "credit":"",
           "caption":""
         }
-      },
-      {
-        "startDate":"2013,02,12",
-        "endDate":"2013,03,27",
-        "headline":"Vine",
-        "text":"",
-        "asset":
-        {
-          "media":"https://vine.co/v/b55LOA1dgJU",
-          "credit":"",
-          "caption":"happy for now what"
-        }
-      },
-      {
-        "startDate":"2013,04,30",
-        "endDate":"2013,5,27",
-        "headline":"音樂播放：Soundcloud",
-        "text":"",
-        "asset":
-        {
-          "media":"https://soundcloud.com/leagueoflegends/vi",
-          "credit":"",
-          "caption":"happy for now what"
-        }
-      },
-      {
-        "startDate":"2013,07,28",
-        "endDate":"2013,08,11",
-        "headline":"動圖測試",
-        "text":"",
-        "asset":
-        {
-          "media":"img/test.gif",
-          "credit":"",
-          "caption":"happy for now what"
-        }
       }
     ]
   }
