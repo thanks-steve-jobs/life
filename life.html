@@ -42,7 +42,7 @@
             </div>
             <div class="input-name">
                 <input id="set-fit" type="checkbox" name="set-fit" value="fit">
-                <label for="set-fit" class="set-text">Fit BGM</label>
+                <label for="set-fit" class="set-text">Rewind</label>
                 <button class="setbutton" onclick="setOK()">OK</button>
                 <button class="setbutton" onclick="setNO()">NO</button>
             </div> 
@@ -103,6 +103,7 @@
         function setOK() {
             delay = document.getElementById('set-delay').value*1000;
             document.getElementById('set-panel').style.display = 'none';
+            direction = !document.getElementById('set-fit').checked;
         }
         function setNO() { 
             document.getElementById('set-panel').style.display = 'none';

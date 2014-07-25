@@ -29,11 +29,11 @@ var setPanel = {
         document.getElementById("set-content").value = null;
         var placeholder;
         if(type == 2)
-            placeholder = "iframe url here";
+            placeholder = "　iframe url here";
         else if(type == 1)
-            placeholder = "media url here";
+            placeholder = "　media url here";
         else
-            placeholder = "your text here"
+            placeholder = "　your text here"
         document.getElementById("set-content").placeholder = placeholder;
         icons = [];
         icons.push(document.getElementById("c-text"));
@@ -132,7 +132,7 @@ function makeDiv(text){
     // var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
     // var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
     var posx = (((nodeNum-1)%8)*90).toFixed();
-    var posy = (500 + Math.floor((nodeNum-1)/8)*90 - divsize).toFixed();
+    var posy = (550 + Math.floor((nodeNum-1)/8)*90 - divsize).toFixed();
     
     $newdiv.css({
         'position':'absolute',
