@@ -59,7 +59,7 @@
         "startDate":"1976",
         "endDate":"",
         "headline":"成立蘋果公司",
-        "text":"與Steve Wozniak成立了蘋果公司。",
+        "text":"與 Steve Wozniak 成立了蘋果公司。",
         "asset":
         {
           "media":"img/apple_open.gif",
@@ -71,7 +71,7 @@
         "startDate":"1985",
         "endDate":"",
         "headline":"離開蘋果公司",
-        "text":"首台麥金塔電腦廣受歡迎。因權力鬥爭在1985年離開蘋果，創辦NeXT。",
+        "text":"首台麥金塔電腦廣受歡迎。因權力鬥爭在 1985 年離開蘋果，創辦 NeXT。",
         "asset":
         {
           "media":"img/leave_apple.gif",
@@ -155,7 +155,7 @@
         "startDate":"2012",
         "endDate":"",
         "headline":"iPad 3, iPad 4, iPad mini, iPhone 5",
-        "text":"遺澤",
+        "text":"遺澤。",
         "asset":
         {
           "media":"",
