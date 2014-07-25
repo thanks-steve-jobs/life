@@ -58,8 +58,8 @@
       {
         "startDate":"1976",
         "endDate":"",
-        "headline":"成立蘋果公司",
-        "text":"與 Steve Wozniak 成立了蘋果公司。",
+        "headline":"成立 Apple",
+        "text":"與 Steve Wozniak 成立了蘋果公司 (Apple)。",
         "asset":
         {
           "media":"img/apple_open.gif",
@@ -70,7 +70,7 @@
       {
         "startDate":"1985",
         "endDate":"",
-        "headline":"離開蘋果公司",
+        "headline":"離開 Apple",
         "text":"首台麥金塔電腦廣受歡迎。因權力鬥爭在 1985 年離開蘋果，創辦 NeXT。",
         "asset":
         {
@@ -82,8 +82,8 @@
       {
         "startDate":"1986",
         "endDate":"",
-        "headline":"皮克斯動畫公司 (Pixar)",
-        "text":"成立獨立公司皮克斯動畫工作室 (Pixar)",
+        "headline":"PIXAR",
+        "text":"成立獨立公司皮克斯動畫工作室 (Pixar)。",
         "asset":
         {
           "media":"./img/pixar.gif",
@@ -94,8 +94,8 @@
       {
         "startDate":"1997",
         "endDate":"",
-        "headline":"重回蘋果 / iMac",
-        "text":"重掌蘋果電腦的大權。在同年推出 iMac。",
+        "headline":"重回 Apple",
+        "text":"重掌蘋果電腦的大權，並在同年推出 iMac。",
         "asset":
         {
           "media":"./img/back_apple.gif",
@@ -128,7 +128,7 @@
         }
       }, 
       {
-        "startDate":"2007",
+        "startDate":"2007,1,9",
         "endDate":"",
         "headline":"第一隻 iPhone 問世",
         "text":"",
@@ -140,7 +140,7 @@
         }
       },
       {
-        "startDate":"2010",
+        "startDate":"2010,4,3",
         "endDate":"",
         "headline":"上帝的平板 iPad 亮相",
         "text":"",
