@@ -6,7 +6,7 @@ var tl = {
     "timeline":
     {
         "headline":"My Timeline",
-        "type":"My Timeline",
+        "type":"default",
         "text":"So fun",
         "startDate":"2000,1,1",
         "date": [],
