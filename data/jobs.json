@@ -68,7 +68,7 @@
         }
       },
       {
-        "startDate":"1985",
+        "startDate":"1985,9,17",
         "endDate":"",
         "headline":"離開 Apple",
         "text":"首台麥金塔電腦廣受歡迎。因權力鬥爭在 1985 年離開蘋果，創辦 NeXT。",
@@ -104,7 +104,7 @@
         }
       },
       {
-        "startDate":"2001",
+        "startDate":"2001,10",
         "endDate":"",
         "headline":"第一台 iPod",
         "text":"",
@@ -116,13 +116,13 @@
         }
       },
       {
-        "startDate":"2005",
+        "startDate":"2005,6,12",
         "endDate":"",
         "headline":"史丹佛大學畢業典禮演說",
         "text":"",
         "asset":
         {
-          "media":"<iframe src='demo/video/Steve_Jobs.mp4'></iframe>",
+          "media":"http://youtu.be/pOHefN8SlGw",
           "credit":"",
           "caption":""
         }
@@ -164,8 +164,8 @@
         }
       },
       {
-        "startDate":"2012",
-        "endDate":"2014,7,23",
+        "startDate":"2014,7,17",
+        "endDate":"2014,7,18",
         "headline":"繁族不及備載",
         "text":"直到 2014 年的現在，還是可以在 iPad 3, iPad 4, iPad Air, iPad mini, iPad mini 2, iPhone 5, iPhone 5S ... 等不少商品身上看到 Jobs 的身影 。",
         "asset":
@@ -176,8 +176,8 @@
         }
       },
       {
-        "startDate":"2014",
-        "endDate":"2014,7,24",
+        "startDate":"2014,7,21",
+        "endDate":"2014,7,26",
         "headline":"END",
         "text":"本作品由 Charlie, <a href='https://github.com/mouse170' target='_blank'>Chu</a>, Dick, <a href='https://github.com/olgahaha' target='_blank'>Olga</a>, <a href='https://github.com/skyduck0205' target='_blank'>Steven</a>, <a href='https://github.com/chusiang' target='_blank'>chusiang</a> 於 iDSBG 第三屆 HTML5 Hackathon 所製作。 <p> - <u><a href='https://github.com/thanks-steve-jobs/life' target='_blank'>Fork me on GitHub</a></u> </p>",
         "asset":
