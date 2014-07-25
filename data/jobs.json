@@ -10,7 +10,7 @@
       {
         "startDate":"1955,2,24",
         "endDate":"",
-        "headline":"出生",
+        "headline":"誕生",
         "text":"1955 年被住在加州的賈伯斯夫婦領養。",
         "asset":
         {
@@ -159,6 +159,30 @@
         "asset":
         {
           "media":"img/jobs-dead.gif",
+          "credit":"",
+          "caption":""
+        }
+      },
+      {
+        "startDate":"2012",
+        "endDate":"2014,7,23",
+        "headline":"繁族不及備載",
+        "text":"直到 2014 年的現在，還是可以在 iPad 3, iPad 4, iPad Air, iPad mini, iPad mini 2, iPhone 5, iPhone 5S ... 等不少商品身上看到 Jobs 的身影 。",
+        "asset":
+        {
+          "media":"",
+          "credit":"",
+          "caption":""
+        }
+      },
+      {
+        "startDate":"2014",
+        "endDate":"2014,7,24",
+        "headline":"END",
+        "text":"本作品由 Charlie, <a href='https://github.com/mouse170' target='_blank'>Chu</a>, Dick, <a href='https://github.com/olgahaha' target='_blank'>Olga</a>, <a href='https://github.com/skyduck0205' target='_blank'>Steven</a>, <a href='https://github.com/chusiang' target='_blank'>chusiang</a> 於 iDSBG 第三屆 HTML5 Hackathon 所製作。 <p> - <u><a href='https://github.com/thanks-steve-jobs/life' target='_blank'>Fork me on GitHub</a></u> </p>",
+        "asset":
+        {
+          "media":"",
           "credit":"",
           "caption":""
         }
