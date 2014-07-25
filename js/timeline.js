@@ -9128,8 +9128,7 @@ if(typeof VMM.Timeline != 'undefined' && typeof VMM.Timeline.TimeNav == 'undefin
 				_marker					= VMM.appendAndGetElement($content, "<div>", "marker");
 				_marker_flag			= VMM.appendAndGetElement(_marker, "<div>", "flag");
 				_marker_content			= VMM.appendAndGetElement(_marker_flag, "<div>", "flag-content");
-				_marker_dot				= VMM.appendAndGetElement(_marker, "<div>", "dot");
-        _marker_dot[0].innerHTML = VMM.Date.prettyDate(data[i].startdate, true);
+				_marker_dot				= VMM.appendAndGetElement(_marker, "<div>", "dot", VMM.Date.prettyDate(data[i].startdate, true));
 				_marker_line			= VMM.appendAndGetElement(_marker, "<div>", "line");
 				_marker_line_event		= VMM.appendAndGetElement(_marker_line, "<div>", "event-line");
 				_marker_relative_pos	= positionRelative(interval, data[i].startdate, data[i].enddate);
