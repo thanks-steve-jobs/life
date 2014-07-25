@@ -1,11 +1,24 @@
 {
   "timeline":
   {
-    "headline":"Jonny Lai ♥",
+    "headline":"Chu-Siang Lai",
     "type":"default",
-    "startDate":"2007",
+    "text":"1986 - Now",
+    "startDate":"1986,1,1",
     "date":
     [
+      {
+        "startDate":"1986,2",
+        "endDate":"",
+        "headline":"誕生",
+        "text":"",
+        "asset":
+        {
+          "media":"",
+          "credit":"",
+          "caption":""
+        }
+      },
       {
         "startDate":"2008",
         "endDate":"",
@@ -69,8 +82,8 @@
       {
         "startDate":"2013,12",
         "endDate":"",
-        "headline":"公司",
-        "text":"內部比賽",
+        "headline":"iDSBG",
+        "text":"iDSBG Hackathon 1st.",
         "asset":
         {
           "media":"img/h3-photo/19.jpg",
