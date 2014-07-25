@@ -5,10 +5,10 @@ window.onload = function() {
 var tl = {
     "timeline":
     {
-        "headline":"First Timeline",
-        "type":"default",
+        "headline":"My Timeline",
+        "type":"My Timeline",
         "text":"So fun",
-        "startDate":"2012,1,26",
+        "startDate":"2000,1,1",
         "date": [],
     }
 }
