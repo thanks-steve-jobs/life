@@ -8432,38 +8432,40 @@ if(typeof VMM.Timeline != 'undefined' && typeof VMM.Timeline.TimeNav == 'undefin
 					}
 				}
 				
-				// CONTROL ROW POSITION
-				if (tags.length > 0) {
-					
-					for (k = 0; k < tags.length; k++) {
-						if (k < config.nav.rows.current.length) {
-							if (marker.tag == tags[k]) {
-								row = k;
-								if (k == config.nav.rows.current.length - 1) {
-									trace("ON LAST ROW");
-									VMM.Lib.addClass(marker.flag, "flag-small-last");
-								}
-							}
-						}
-					}
-					row_pos = config.nav.rows.current[row];
-				} else {
-					
-					if (pos.begin - previous_pos.begin < (config.nav.marker.width + config.spacing)) {
-						if (row < config.nav.rows.current.length - 1) {
-							row ++;
-						
-						} else {
-							row = 0;
-							row_depth ++;
-						}
-					} else {
-						row_depth = 1;
-						row = 1;
-					}
-					row_pos = config.nav.rows.current[row];
-					
-				}
+//				// CONTROL ROW POSITION
+//				if (tags.length > 0) {
+//					
+//					for (k = 0; k < tags.length; k++) {
+//						if (k < config.nav.rows.current.length) {
+//							if (marker.tag == tags[k]) {
+//								row = k;
+//								if (k == config.nav.rows.current.length - 1) {
+//									trace("ON LAST ROW");
+//									VMM.Lib.addClass(marker.flag, "flag-small-last");
+//								}
+//							}
+//						}
+//					}
+//					row_pos = config.nav.rows.current[row];
+//				} else {
+//					
+//					if (pos.begin - previous_pos.begin < (config.nav.marker.width + config.spacing)) {
+//						if (row < config.nav.rows.current.length - 1) {
+//							row ++;
+//						
+//						} else {
+//							row = 0;
+//							row_depth ++;
+//						}
+//					} else {
+//						row_depth = 1;
+//						row = 1;
+//					}
+//					row_pos = config.nav.rows.current[row];
+//					
+//				}
+				row = 1;	
+        row_pos = config.nav.rows.current[row];
 				
 				// SET LAST MARKER POSITION
 				previous_pos = pos;
@@ -9117,6 +9119,7 @@ if(typeof VMM.Timeline != 'undefined' && typeof VMM.Timeline.TimeNav == 'undefin
 				_marker_flag			= VMM.appendAndGetElement(_marker, "<div>", "flag");
 				_marker_content			= VMM.appendAndGetElement(_marker_flag, "<div>", "flag-content");
 				_marker_dot				= VMM.appendAndGetElement(_marker, "<div>", "dot");
+        _marker_dot[0].innerHTML = VMM.Date.prettyDate(data[i].startdate, true);
 				_marker_line			= VMM.appendAndGetElement(_marker, "<div>", "line");
 				_marker_line_event		= VMM.appendAndGetElement(_marker_line, "<div>", "event-line");
 				_marker_relative_pos	= positionRelative(interval, data[i].startdate, data[i].enddate);
