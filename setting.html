@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+	<link rel="stylesheet" href="css/setting.css">
+    <script src="js/setting.js" defer></script>
+    <script src="js/jquery.min.js" defer></script>
+	<title>LifeZMD</title>
+</head>
+
+<body class=''>
+	<div class="navbar">
+		<img class="logo" src="img/logo.png">
+		<button id="build" onclick="setPanel.submit()">BUILD</button>
+	</div>
+	
+	<div class="wrapper">
+		<div class="set-panel">
+			<div class="input-name">
+				<div class="set-text">TIME:</div>
+	        	<input id="set-time" class="set-input" type="date" name="set-time">
+			</div>
+	        <div class="input-name">
+	        	<div class="set-text">HEADLINE:</div>
+	        	<input id="set-head" class="set-input" type="text" name="set-head">
+	        </div>
+	        <div>
+		        <div id="set-icon-bar" class="input-name">
+		        	<div class="set-text">CONTENT:</div>
+		            <!-- <img id="c-text" class="type-icon" src="img/icon/vid.png" alt="Text" onclick="setPanel.mode(0)">
+		            <img id="c-image" class="type-icon" src="img/icon/vid.png" alt="Image" onclick="setPanel.mode(1)">
+		            <img id="c-video" class="type-icon" src="img/icon/vid.png" alt="Video" onclick="setPanel.mode(2)"> -->        
+		        </div>
+		        <div>
+		        	<span id="c-text" class="type-icon" onclick="setPanel.mode(0)">text</span>
+					<span id="c-media" class="type-icon" onclick="setPanel.mode(1)">media</span>
+					<span id="c-iframe" class="type-icon" onclick="setPanel.mode(2)">iframe</span>
+		        </div>
+		        
+		        <input type="text" id="set-content" class="set-input" name="set-content" placeholder="　your text here">
+		        <button id="add" onclick="setPanel.add()">ADD</button>
+	        	<button id="clear" onclick="setPanel.clear()">CLEAR</button>
+	        </div>
+	        
+    	</div>
+	</div>
+
+</body>
+</html>

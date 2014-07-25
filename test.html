@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>時間軸</title>
+    <!-- always load the CSS -->
+    <link rel="stylesheet" type="text/css" href="css/timeline.css">
+    <!-- Style-->
+    <style>
+    html,
+    body {
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    /*hide timelineBar
+    .vco-timeline .vco-navigation { display:none !important; }
+     .vco-storyjs .vco-feature .slider, .vco-storyjs .vco-feature .vco-slider {  box-shadow: none !important; }
+     */
+    </style>
+    <!-- font -->
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:700,400' rel='stylesheet' type='text/css'>
+    <link href='css/noto-sans.css' rel='stylesheet' type='text/css'>
+    <link href='css/life.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="set-panel">
+            <div class="input-name">
+                <div class="set-text">DELAY:</div>
+                <input id="set-delay" class="set-input" type="range" name="points" min="1" max="60" oninput="updateVal(this.value)" onchange="updateVal(this.value)" value="3">
+                <div id="delay-time" class="set-text">03</div>
+            </div>
+            <div class="input-name">
+                <div class="set-text">BGM:</div>
+                <input id="set-bgm" class="set-input" type="text" name="set-bgm">
+            </div>
+            <div class="input-name">
+                <input id="set-fit" type="checkbox" name="set-fit" value="fit">
+                <label for="set-fit" class="set-text">Fit BGM</label>
+                <button class="setbutton" onclick="setOK()">OK</button>
+                <button class="setbutton" onclick="setNO()">NO</button>
+            </div> 
+        </div>
+    </div>
+
+    <div id="timeline-embed"></div>
+
+    <script type="text/javascript">
+        var timeline_config = {
+            width: "100%",
+            height: "100%",
+
+            //source: 'life.json',
+            // source: 'https://docs.google.com/spreadsheet/pub?key=0ApcNqKv63cAkdDI4WVJNNmRSUElUZ0xrNEVwdUNYQlE&output=html',
+            source: 'life.json',
+            // source: "data.html",
+            lang: "en",
+
+            // source: 'life_rewrite.json',
+            debug: true,
+
+        }
+        var slide_count = 20;
+        var delay = 3000;
+
+        function autoPlay() {
+            var url = window.location.href;
+            var hash = parseInt(url.substring(url.indexOf("#") + 1));
+            if (isNaN(hash) || hash === slide_count) window.location.href = "#0";
+            else {
+                $('.nav-next').trigger('click');
+            }
+        }
+        var tri;
+        function loopPlay() {
+            tri = setInterval(function() {
+                autoPlay()
+            }, delay);
+        }
+        function loopStop() {
+            clearInterval(tri);
+        }
+        function setting() {
+            document.getElementById('set-delay').value = delay/1000;
+            document.getElementById('delay-time').innerHTML = delay/1000;
+            document.getElementById('set-panel').style.display = 'block';
+        }
+        function setOK() {
+            delay = document.getElementById('set-delay').value*1000;
+            document.getElementById('set-panel').style.display = 'none';
+        }
+        function setNO() { 
+            document.getElementById('set-panel').style.display = 'none';
+        }
+        function updateVal(n) {
+            document.getElementById('delay-time').innerHTML = n;
+        }
+        function playSound(id) {
+            var a = document.getElementById(id);
+            if(!a.paused) {
+                a.pause();
+                a.currentTime = 0;
+            }
+            a.play();
+        }
+        function setVolume(id, volume) {
+            var a = document.getElementById(id);
+            a.volume = volume;
+        }
+    </script>
+<button type="button" onclick="loopPlay()">AutoPlay</button> 
+
+
+</body>
+
+
+<script type="text/javascript" src="js/storyjs-embed.js"></script>
+<!-- and then one of either -->
+<script type="text/javascript" src="js/timeline.js" defer></script>
+
+
+</html>
