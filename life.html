@@ -74,13 +74,16 @@
             // 設定slide及延遲
         var slide_count = 20;
         var delay = 3000;
-
+        var direction = true;
         function autoPlay() {
             var url = window.location.href;
             var hash = parseInt(url.substring(url.indexOf("#") + 1));
             if (isNaN(hash) || hash === slide_count) window.location.href = "#0";
             else {
-                $('.nav-next').trigger('click');
+                if(direction)
+                    $('.nav-next').trigger('click');
+                else
+                    $('.nav-previous').trigger('click');
             }
         }
         var tri;
