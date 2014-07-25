@@ -5,10 +5,10 @@ window.onload = function() {
 var tl = {
     "timeline":
     {
-        "headline":"First Timeline",
-        "type":"default",
+        "headline":"My Timeline",
+        "type":"My Timeline",
         "text":"So fun",
-        "startDate":"2012,1,26",
+        "startDate":"2000,1,1",
         "date": [],
     }
 }
@@ -96,7 +96,7 @@ var setPanel = {
             document.body.className = 'animation-3s fadeOut';
         }, 1000 );
         setTimeout( function() {
-            document.location.href = 'life.html';
+            document.location.href = 'life_edit.html';
         }, 4000 );
     },
     clear: function() {
