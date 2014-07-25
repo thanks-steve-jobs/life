@@ -385,6 +385,63 @@
   from {transform: rotate(0deg);}
   to {transform: rotate(-45deg);}
 }
+@-webkit-keyframes sliderzoomin{
+  from {-webkit-transform:scale(0.1,0.1); opacity:1;}
+  to {-webkit-transform:scale(1,1); opacity:1;}
+}
+@-moz-keyframes sliderzoomin{
+  from {-moz-transform:scale(0.1,0.1); opacity:1;}
+  to {-moz-transform:scale(1,1); opacity:1;}
+}
+@-ms-keyframes sliderzoomin{
+  from {-ms-transform:scale(0.1,0.1); opacity:1;}
+  to {-ms-transform:scale(1,1); opacity:1;}
+}
+@-o-keyframes sliderzoomin{
+  from {-o-transform:scale(0.1,0.1); opacity:1;}
+  to {-o-transform:scale(1,1); opacity:1;}
+}
+@keyframes sliderzoomin{
+  from {transform:scale(0.1,0.1); opacity:1;}
+  to {transform:scale(1,1); opacity: 1;}
+}
+.slider-item{
+  opacity:0; 
+}
+.sliderzoomin{
+  -webkit-animation: sliderzoomin 0.5s 1 0.6s forwards;
+  -moz-animation: sliderzoomin 0.5s 1 0.6s forwards;
+  -ms-animation: sliderzoomin 0.5s 1 0.6s forwards;
+  -o-animation: sliderzoomin 0.5s 1 0.6s forwards;
+  animation: sliderzoomin 0.5s 1 0.6s forwards;
+}
+@-webkit-keyframes sliderzoomout{
+  from {-webkit-transform:scale(1,1); opacity:1;}
+  to {-webkit-transform:scale(0.1,0.1); opacity:0;}
+}
+@-moz-keyframes sliderzoomout{
+  from {-moz-transform:scale(1,1); opacity:1;}
+  to {-moz-transform:scale(0.1,0.1); opacity:0;}
+}
+@-ms-keyframes sliderzoomout{
+  from {-ms-transform:scale(1,1); opacity:1;}
+  to {-ms-transform:scale(0.1,0.1); opacity:0;}
+}
+@-o-keyframes sliderzoomout{
+  from {-o-transform:scale(1,1); opacity:1;}
+  to {-o-transform:scale(0.1,0.1); opacity:0;}
+}
+@keyframes sliderzoomout{
+  from {transform:scale(1,1);opacity:1;}
+  to {transform:scale(0.1,0.1);opacity:0;}
+}
+.sliderzoomout{
+  -webkit-animation: sliderzoomout 0.5s 1;
+  -moz-animation: sliderzoomout 0.5s 1;
+  -ms-animation: sliderzoomout 0.5s 1;
+  -o-animation: sliderzoomout 0.5s 1;
+  animation: sliderzoomout 0.5s 1;
+}
 .vco-timeline .vco-navigation .timenav .content .marker.active .flag{
   background-image:url(timeline.png?v4.4);background-repeat:no-repeat;background-position:0 -53px;width:153px;height:53px;
   -webkit-animation: activeflag 0.5s 1 forwards;
