@@ -22,13 +22,12 @@
     <!-- font -->
 <!--    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:700,400' rel='stylesheet' type='text/css'>-->
     <link href='css/noto-sans.css' rel='stylesheet' type='text/css'>
+    <link href='css/life.css' rel='stylesheet' type='text/css'>
 
 
 </head>
 
 <body>
-    <div id="timeline-embed"></div>
-
     <script type="text/javascript">
     var timeline_config = {
             width: "100%",
@@ -37,14 +36,12 @@
             source: 'life.json',
             // source: "data.html",
             lang: "en",
-
             // source: 'life_rewrite.json',
-            debug: true,
-
+            // debug: true,
         }
         // 設定slide及延遲
-    var slide_count = 17,
-        delay = 3000;
+    var slide_count = 20;
+    var delay = 1000;
 
     function autoPlay() {
         var url = window.location.href;
@@ -55,22 +52,62 @@
         }
     }
     var tri;
-
     function loopPlay() {
-
         tri = setInterval(function() {
             autoPlay()
         }, delay);
     }
-
     function loopStop() {
         clearInterval(tri);
     }
+    function setting() {
+        document.getElementById('set-delay').value = delay/1000;
+        document.getElementById('delay-time').innerHTML = delay/1000;
+        document.getElementById('set-panel').style.display = 'block';
+    }
+    function setOK() {
+        delay = document.getElementById('set-delay').value*1000;
+        document.getElementById('set-panel').style.display = 'none';
+    }
+    function setNO() { 
+        document.getElementById('set-panel').style.display = 'none';
+    }
+    function updateVal(n) {
+        document.getElementById('delay-time').innerHTML = n;
+    }
     </script>
-    <button type="button" onclick="loopPlay()">AutoPlay</button>
-    <button type="button" onclick="loopStop()">Stop</button>
+    
 
+    <div class="wrapper">
+        <div id="set-panel">
+            <div class="input-name">
+                <div class="set-text">DELAY:</div>
+                <input id="set-delay" class="set-input" type="range" name="points" min="1" max="60" oninput="updateVal(this.value)" onchange="updateVal(this.value)">
+                <div id="delay-time" class="set-text">03</div>
+            </div>
+            <div class="input-name">
+                <div class="set-text">BGM:</div>
+                <input id="set-bgm" class="set-input" type="text" name="set-bgm">
+            </div>
+            <div class="input-name">
+                <input id="set-fit" type="checkbox" name="set-fit" value="fit">
+                <label for="set-fit" class="set-text">Fit BGM</label>
+                <button class="setbutton" onclick="setOK()">OK</button>
+                <button class="setbutton" onclick="setNO()">NO</button>
+            </div> 
+        </div>
+    </div>
 
+    <div id="timeline-embed"></div>
+
+    
+    <div class="fbutton-bar">
+        <button class="fbutton" onclick="setting()">Setting</button>
+        <button class="fbutton" onclick="loopStop()">Stop</button>
+        <button class="fbutton" onclick="loopPlay()">Play</button>
+    </div>
+    
+    <div></div>
 </body>
 
 

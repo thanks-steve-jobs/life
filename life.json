@@ -47,7 +47,7 @@
         "startDate":"1975",
         "endDate":"",
         "headline":"打磚塊 (Breakout)",
-        "text":"再次回到雅達利 (Atari) 的賈伯斯找到沃茲尼亞克開發「打磚塊」等的遊戲。",
+        "text":"",
         "asset":
         {
           "media":"<iframe src='./demo/breakout/index.html'></iframe>",
@@ -107,7 +107,7 @@
         "startDate":"2001",
         "endDate":"",
         "headline":"第一台 iPod",
-        "text":"可以說從 iPod 開始，蘋果漸漸改變了電腦公司的體質，朝向消費、生活產品前進。除了改變自己，也讓音樂產業起了翻天覆地的變化，後來的 iTunes Store 讓音樂的銷售有了又新又強力的管道。",
+        "text":"",
         "asset":
         {
           "media":"<iframe src='./demo/iPod/index.html'></iframe>",
@@ -167,7 +167,7 @@
         "startDate":"2013,02,12",
         "endDate":"2013,03,27",
         "headline":"Vine",
-        "text":"<a href='http://www.google.com'>Vine Test</a>",
+        "text":"",
         "asset":
         {
           "media":"https://vine.co/v/b55LOA1dgJU",
