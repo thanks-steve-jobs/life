@@ -41,7 +41,7 @@ div {
 	position: relative;
 	width: 80%;
 	height: 400px;
-	left: 50%;
+	left: 15%;
 	transform: translateX(-50%);
 	margin-top: 30px;
 	/*box-shadow: 3px 3px 1px #ddd;*/
