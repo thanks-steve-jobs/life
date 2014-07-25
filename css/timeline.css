@@ -28,7 +28,8 @@
 }
 .vco-container {
     /*background: linear-gradient(135deg, #CEBE29 0px, #9B1F50 33%, #2989D8 71%, #89B4FF 91%) repeat scroll 0% 0% / 100% 100% transparent;*/
-    background: linear-gradient(135deg, #1E1E1F 0px, #424143 33%, #67666A 71%, #807F83 91%) repeat scroll 0% 0% / 100% 100% transparent;
+    /*background: linear-gradient(135deg, #1E1E1F 0px, #424143 33%, #67666A 71%, #807F83 91%) repeat scroll 0% 0% / 100% 100% transparent;*/
+    background:#fff;
     position: relative;
     top: -100%;
 }
@@ -161,7 +162,7 @@
     margin-bottom: 15px
 }
 .vco-storyjs .vco-feature p {
-    color: #F8FFFC
+    color: #292929
 }
 .vco-storyjs .vco-feature blockquote, .vco-storyjs .vco-feature blockquote p {
     color: #000
@@ -178,7 +179,7 @@
 }
 .vco-storyjs h1, .vco-storyjs h2, .vco-storyjs h3, .vco-storyjs h4, .vco-storyjs h5, .vco-storyjs h6 {
     font-weight: normal;
-    color: #E0E5E3;
+    color: #121212;
     text-transform: none
 }
 .vco-storyjs h1 a, .vco-storyjs h2 a, .vco-storyjs h3 a, .vco-storyjs h4 a, .vco-storyjs h5 a, .vco-storyjs h6 a {
@@ -216,7 +217,7 @@
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 3.75px;
-    color: #F8FFFC
+    color: #292929
 }
 .vco-storyjs h3, .vco-storyjs h4, .vco-storyjs h5, .vco-storyjs h6 {
     line-height: 40px
@@ -941,7 +942,7 @@
 }
 .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .media-frame, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .media-image img {
     border: 1px solid;
-    border-color: #ccc #999 #999 #ccc;
+    /*border-color: #ccc #999 #999 #ccc;*/
     background-color: #fff
 }
 .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .media-frame iframe {
@@ -1080,7 +1081,7 @@
 .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption {
     text-align: left;
     margin-top: 10px;
-    color: #E0E5E3;
+    color:#121212;
     font-size: 11px;
     line-height: 14px;
     text-rendering: optimizeLegibility;
