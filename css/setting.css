@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 * {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	
 	user-select: none;
 	-webkit-user-select: none;
 	user-drag: none;
@@ -37,9 +41,13 @@
 	font-size: 30px;
 }
 .type-icon {
-	background-image: url(../img/icon/vid.png);
+	/*background-image: url(../img/icon/vid.png);*/
 	width: 60px;
 	height: 40px;
+	background-color: #ddd;
+	border-radius: 20px;
+	text-align: center;
+	padding-top: 5px;
 }
 
 button {
