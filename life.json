@@ -95,7 +95,7 @@
         "startDate":"1997",
         "endDate":"",
         "headline":"重回蘋果 / iMac",
-        "text":"他重掌蘋果電腦的大權。在同年推出 iMac。",
+        "text":"重掌蘋果電腦的大權。在同年推出 iMac。",
         "asset":
         {
           "media":"./img/back_apple.gif",
@@ -116,10 +116,22 @@
         }
       },
       {
+        "startDate":"2005",
+        "endDate":"",
+        "headline":"史丹佛大學畢業典禮演說",
+        "text":"",
+        "asset":
+        {
+          "media":"https://www.youtube.com/watch?v=pOHefN8SlGw",
+          "credit":"",
+          "caption":""
+        }
+      }, 
+      {
         "startDate":"2007",
         "endDate":"",
         "headline":"第一隻 iPhone 問世",
-        "text":"賈伯斯考慮推出低價小筆電，反倒給平板電腦打了催生劑。",
+        "text":"",
         "asset":
         {
           "media":"img/iphone1.gif",
@@ -131,7 +143,7 @@
         "startDate":"2010",
         "endDate":"",
         "headline":"上帝的平板 iPad 亮相",
-        "text":"這個位置當然要留言 iPad。1 月 27 日，Steve Jobs 說，在手機和筆電中間，能不能放進什麼樣的產品呢？在虧了 Netbook 一下後，介紹 iPad 出場並說：「我這裡剛好有一台，讓我玩給大家看看...」。",
+        "text":"",
         "asset":
         {
           "media":"img/iPad.gif",
@@ -140,25 +152,13 @@
         }
       },
       {
-        "startDate":"2011",
+        "startDate":"2011,10,05",
         "endDate":"",
-        "headline":"去世, iPad 2, iPhone 4S",
+        "headline":"去世",
         "text":"蘋果已經建立起一個擁有 500 萬個有效用戶的龐大資料庫，這也讓蘋果在未來的數位商務時代，搶得了先機。",
         "asset":
         {
           "media":"img/jobs-dead.gif",
-          "credit":"",
-          "caption":""
-        }
-      },
-      {
-        "startDate":"2012",
-        "endDate":"",
-        "headline":"iPad 3, iPad 4, iPad mini, iPhone 5",
-        "text":"遺澤",
-        "asset":
-        {
-          "media":"",
           "credit":"",
           "caption":""
         }
