@@ -27,9 +27,13 @@
 	        <div>
 	        	<span class="set-text">Content:</span>
 		        <div id="set-icon-bar">
-		            <img id="c-text" class="type-icon" src="img/icon/vid.png" alt="Text" onclick="setPanel.mode(0)">
-		            <img id="c-image" class="type-icon" src="img/icon/vid.png" alt="Image" onclick="setPanel.mode(1)">    
-		            <img id="c-video" class="type-icon" src="img/icon/vid.png" alt="Video" onclick="setPanel.mode(2)">        
+		        	<div id="c-text" class="type-icon" onclick="setPanel.mode(0)">Text</div>
+					<div id="c-image" class="type-icon" onclick="setPanel.mode(1)">Media</div>
+					<div id="c-video" class="type-icon" onclick="setPanel.mode(2)">iFrame</div>
+
+		            <!-- <img id="c-text" class="type-icon" src="img/icon/vid.png" alt="Text" onclick="setPanel.mode(0)">
+		            <img id="c-image" class="type-icon" src="img/icon/vid.png" alt="Image" onclick="setPanel.mode(1)">
+		            <img id="c-video" class="type-icon" src="img/icon/vid.png" alt="Video" onclick="setPanel.mode(2)"> -->        
 		        </div>
 		        <input type="text" id="set-content" class="set-text" name="set-content">
 	        </div>

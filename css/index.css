@@ -16,8 +16,8 @@
 }
 body {
 	text-align: center;
-	color: #666;
 	font-size: 16px;
+  color: #333;
 	line-height: 1.5em;
 }
 #title {
