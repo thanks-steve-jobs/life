@@ -1,9 +1,9 @@
 {
   "timeline":
   {
-    "headline":"1955 - 2011",
+    "headline":"Steve Jobs",
     "type":"default",
-    "text":"Steve Jobs",
+    "text":"1955 - 2011",
     "startDate":"1955,1,1",
     "date":
     [
@@ -94,7 +94,7 @@
       {
         "startDate":"1997",
         "endDate":"",
-        "headline":"重回頻果 / iMac",
+        "headline":"重回蘋果 / iMac",
         "text":"他重掌蘋果電腦的大權。在同年推出 iMac。",
         "asset":
         {
