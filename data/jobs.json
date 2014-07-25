@@ -122,7 +122,7 @@
         "text":"",
         "asset":
         {
-          "media":"http://youtu.be/pOHefN8SlGw",
+          "media":"<iframe src='./demo/video/Steve_Jobs.mp4'></iframe>",
           "credit":"",
           "caption":""
         }
