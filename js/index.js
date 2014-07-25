@@ -22,3 +22,12 @@ function goSetting() {
         document.location.href = 'setting.html';
     }, 3000 );
 }
+
+function goJobs() {
+    console.log("goJobs")
+    // document.getElementById("subtitle").className = '.animated .fadeOut';
+    document.body.className = 'animated fadeOut';
+    setTimeout( function() {
+        document.location.href = 'jobs.html';
+    }, 3000 );
+}

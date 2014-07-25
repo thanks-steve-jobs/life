@@ -1,71 +1,67 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/dot.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/jquery.min.js" defer></script>
+	<title>LifeZMD</title>
+</head>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Life : lifeZMD / 人生跑馬燈" />
+<body class='' onresize='resize()' onclick='goJobs()'>
+	<!-- <div id='title'>LifeZMD</div> -->
+	<!-- <div id='subtitle'>created by Team Steven‧假伯斯</div> -->
+    <canvas id="canvas" class="canvas"></canvas>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <div class="help" style="display:None;">?</div> 
 
-    <title>Life</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/thanks-steve-jobs/life">View on GitHub</a>
-
-          <h1 id="project_title">Life</h1>
-          <h2 id="project_tagline">lifeZMD / 人生跑馬燈</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/thanks-steve-jobs/life/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/thanks-steve-jobs/life/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+    <div class="ui" style="display:None;">
+      <input class="ui-input" type="text" />
+      <span class="ui-return">↵</span>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="lifezmd" class="anchor" href="#lifezmd"><span class="octicon octicon-link"></span></a>LifeZMD</h1>
+    <div class="overlay" style="display:None;">
+      <div class="tabs">
+        <div class="tabs-labels"><span class="tabs-label">Commands</span><span class="tabs-label">Info</span><span class="tabs-label">Share</span></div>
 
-<ol>
-<li><a href="http://thanks-steve-jobs.github.io/life/jobs.html">LifeZMD of Steve Jobs</a></li>
-<li><a href="http://thanks-steve-jobs.github.io/life/custom.html">LifeZMD base system</a></li> (need PHP)
-</ol><h2>
-<a name="reference" class="anchor" href="#reference"><span class="octicon octicon-link"></span></a>Reference</h2>
+        <div class="tabs-panels">
+            <ul class="tabs-panel commands">
+                <li class="commands-item"><span class="commands-item-title">Text</span><span class="commands-item-info" data-demo="Hello :)">Type anything</span><span class="commands-item-action">Demo</span></li>
+                <li class="commands-item"><span class="commands-item-title">Countdown</span><span class="commands-item-info" data-demo="#countdown 10">#countdown<span class="commands-item-mode">number</span></span><span class="commands-item-action">Demo</span></li>
+                <li class="commands-item"><span class="commands-item-title">Time</span><span class="commands-item-info" data-demo="#time">#time</span><span class="commands-item-action">Demo</span></li>
+                <li class="commands-item"><span class="commands-item-title">Rectangle</span><span class="commands-item-info" data-demo="#rectangle 30x15">#rectangle<span class="commands-item-mode">width x height</span></span><span class="commands-item-action">Demo</span></li>
+                <li class="commands-item"><span class="commands-item-title">Circle</span><span class="commands-item-info" data-demo="#circle 25">#circle<span class="commands-item-mode">diameter</span></span><span class="commands-item-action">Demo</span></li>
 
-<ul>
-<li><a href="https://github.com/thanks-steve-jobs/HTML5-canvas-breakout-game/tree/master/public">HTML5-canvas-breakout-game/</a></li>
-<li><a href="https://github.com/thanks-steve-jobs/HTML5-canvas-breakout-game/tree/master/public">iPod</a></li>
-</ul>
-      </section>
+                <li class="commands-item commands-item--gap"><span class="commands-item-title">Animate</span><span class="commands-item-info" data-demo="The time is|#time|#countdown 3|#icon thumbs-up"><span class="commands-item-mode">command1</span>&nbsp;|<span class="commands-item-mode">command2</span></span><span class="commands-item-action">Demo</span></li>
+            </ul>
+
+            <!-- <div class="tabs-panel ui-details">
+                <div class="ui-details-content">
+                    <h1>Shape Shifter</h1>
+                    <p>
+                    An experiment by <a href="//www.kennethcachia.com" target="_blank">Kenneth Cachia<a/>.<br/>
+                    <a href="//fortawesome.github.io/Font-Awesome/#icons-new" target="_blank">Font Awesome</a> is being used to render all #icons.
+                    </p>
+
+                    <br/><p>Visit <a href="http://www.kennethcachia.com/shape-shifter/?a=#icon thumbs-up" target="_blank">Shape Shifter</a> to use icons.</p>
+                    </div>
+                    </div> -->
+
+                    <!-- <div class="tabs-panel ui-share">
+                    <div class="ui-share-content">
+                    <h1>Sharing</h1>
+                    <p>Simply add <em>?a=</em> to the current URL to share any static or animated text. Examples:</p>
+                    <p>
+                    <a href="http://www.kennethcachia.com/shape-shifter?a=Hello" target="_blank">www.kennethcachia.com/shape-shifter?a=Hello</a><br/>
+                    <a href="http://www.kennethcachia.com/shape-shifter?a=Hello|#countdown 3" target="_blank">www.kennethcachia.com/shape-shifter?a=Hello|#countdown 3</a>
+                    </p>
+                </div>
+            </div> -->
+            </div>
+        </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Life maintained by <a href="https://github.com/thanks-steve-jobs">thanks-steve-jobs</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-38907726-6");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
-  </body>
+</body>
 </html>
