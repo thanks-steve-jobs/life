@@ -1,9 +1,9 @@
 {
   "timeline":
   {
-    "headline":"Sh*t People Say",
+    "headline":"1955 - 2011",
     "type":"default",
-    "text":"People say stuff here over me",
+    "text":"Steve Jobs",
     "startDate":"1955,1,1",
     "date":
     [
@@ -11,7 +11,7 @@
         "startDate":"1955,2,24",
         "endDate":"",
         "headline":"出生",
-        "text":"1955年被住在加州的賈伯斯夫婦領養(保羅與克蕾拉)，為他們領養的男嬰取名為史帝夫‧保羅‧﹒賈伯斯，幸運的孤雛。但之後就讀Homestead高中，並到惠普電腦修電子課程。",
+        "text":"1955年被住在加州的賈伯斯夫婦領養",
         "asset":
         {
           "media":"img/jobs-born.gif",
@@ -23,7 +23,7 @@
         "startDate":"1973,8,5",
         "endDate":"",
         "headline":"大學休學",
-        "text":"高中畢業後 Jobs (賈伯斯) 到波特蘭的 Reed 大學就讀。但他讀一個學期就不唸了。休學後他一面學習打坐，研究易經。",
+        "text":"波特蘭Reed大學休學。",
         "asset":
         {
           "media":"img/drop-out.gif",
@@ -35,7 +35,7 @@
         "startDate":"1974",
         "endDate":"",
         "headline":"印度靈修",
-        "text":"他就跑到印度尋找心靈上的啟蒙了。",
+        "text":"到印度尋找心靈上的啟蒙。",
         "asset":
         {
           "media":"img/印度靈修.gif",
@@ -47,7 +47,7 @@
         "startDate":"1975",
         "endDate":"",
         "headline":"打磚塊 (Breakout)",
-        "text":"再次回到雅達利 (Atari) 的賈伯斯找到沃茲尼亞克開發「打磚塊」等的遊戲。",
+        "text":"",
         "asset":
         {
           "media":"<iframe src='./demo/breakout/index.html'></iframe>",
@@ -59,7 +59,7 @@
         "startDate":"1976",
         "endDate":"",
         "headline":"成立蘋果公司",
-        "text":"21 歲的賈伯斯與 26 歲的斯蒂夫．沃茲尼亞克 (Steve Wozniak) 成立了蘋果公司。",
+        "text":"與Steve Wozniak成立了蘋果公司。",
         "asset":
         {
           "media":"img/apple_open.gif",
@@ -71,7 +71,7 @@
         "startDate":"1985",
         "endDate":"",
         "headline":"離開蘋果公司",
-        "text":"在賈伯斯帶領下，蘋果於1980年代推出首台麥金塔電腦(Macintosh)，廣受歡迎。隨後因內部權力鬥爭，賈伯斯在1985年離開蘋果，創辦NeXT電腦公司。",
+        "text":"首台麥金塔電腦廣受歡迎。因權力鬥爭在1985年離開蘋果，創辦NeXT。",
         "asset":
         {
           "media":"img/leave_apple.gif",
@@ -83,7 +83,7 @@
         "startDate":"1986",
         "endDate":"",
         "headline":"皮克斯動畫公司 (Pixar)",
-        "text":"他花 1000 萬美元收購了加利福尼亞州 Emeryville 的電腦動畫效果工作室，並成立獨立公司皮克斯動畫工作室 (Pixar)",
+        "text":"成立獨立公司皮克斯動畫工作室 (Pixar)",
         "asset":
         {
           "media":"./img/pixar.gif",
@@ -95,7 +95,7 @@
         "startDate":"1997",
         "endDate":"",
         "headline":"重回頻果 / iMac",
-        "text":"他重掌蘋果電腦的大權。在同年推出 iMac，在美國和日本大賣，使蘋果電腦度過財政危機。",
+        "text":"他重掌蘋果電腦的大權。在同年推出 iMac。",
         "asset":
         {
           "media":"./img/back_apple.gif",
@@ -107,7 +107,7 @@
         "startDate":"2001",
         "endDate":"",
         "headline":"第一台 iPod",
-        "text":"可以說從 iPod 開始，蘋果漸漸改變了電腦公司的體質，朝向消費、生活產品前進。除了改變自己，也讓音樂產業起了翻天覆地的變化，後來的 iTunes Store 讓音樂的銷售有了又新又強力的管道。",
+        "text":"",
         "asset":
         {
           "media":"<iframe src='./demo/iPod/index.html'></iframe>",
@@ -167,7 +167,7 @@
         "startDate":"2013,02,12",
         "endDate":"2013,03,27",
         "headline":"Vine",
-        "text":"<a href='http://www.google.com'>Vine Test</a>",
+        "text":"",
         "asset":
         {
           "media":"https://vine.co/v/b55LOA1dgJU",

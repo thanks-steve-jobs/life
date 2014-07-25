@@ -5696,7 +5696,8 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 			VMM.ExternalAPI.youtube.stopPlayers();
 			
 			// Set current slide
-			current_slide	= n;
+      previous_slide = current_slide;
+      current_slide	= n;
 			_pos			= slides[current_slide].leftpos();
 			
 			
@@ -5761,6 +5762,15 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 				VMM.Lib.stop($slider_container);
 				VMM.Lib.animate($slider_container, _duration, _ease, {"left": -(_pos - config.slider.content.padding)});
 			}
+      if(previous_slide != "undefined")
+      {
+        var ele = slides[previous_slide].elem();
+        VMM.Lib.removeClass(ele, "sliderzoomin");
+        VMM.Lib.addClass(ele, "sliderzoomout");
+      }
+      var ele = slides[current_slide].elem();
+      VMM.Lib.removeClass(ele, "sliderzoomout");
+      VMM.Lib.addClass(ele, "sliderzoomin");
 			
 			if (firstrun) {
 				VMM.fireEvent(layout, "LOADED");
