@@ -13,6 +13,8 @@ var tl = {
     }
 }
 
+var nodeNum = 0;
+
 var setPanel = {
     t: '',
     h: '',
@@ -23,8 +25,29 @@ var setPanel = {
 
     },
     mode: function(type) {
-        console.log("setPanel.mode:"+type)
+        console.log("setPanel.mode:"+type);
         document.getElementById("set-content").value = null;
+        var placeholder;
+        if(type == 2)
+            placeholder = "iframe url here";
+        else if(type == 1)
+            placeholder = "media url here";
+        else
+            placeholder = "your text here"
+        document.getElementById("set-content").placeholder = placeholder;
+        icons = [];
+        icons.push(document.getElementById("c-text"));
+        icons.push(document.getElementById("c-media"));
+        icons.push(document.getElementById("c-iframe"));
+        for(var i=0; i<3; i++) {
+            if(type==i) {
+                icons[i].style.border = '3px solid #333';
+            }
+            else {
+                icons[i].style.border = 'none';
+            }
+        }
+
         this.ctype = type;
     },
     add: function() {
@@ -50,7 +73,10 @@ var setPanel = {
             data["text"] = this.c;
 
         tl["timeline"]["date"].push(data);
-        console.log(JSON.stringify(tl))
+        console.log(JSON.stringify(tl));
+
+        nodeNum ++;
+        makeDiv(this.t.split(',')[0]);
     },
     submit: function() {
         console.log('setPanel.submit');
@@ -62,10 +88,16 @@ var setPanel = {
                 json : JSON.stringify(tl), /* convert here only */
             }
         });
-        document.body.className = 'animation-3s fadeOut';
+        balls = document.getElementsByClassName("ball");
+        for(var i=0; i<balls.length; i++) {
+            balls[i].className += " spin";
+        }
+        setTimeout( function() {
+            document.body.className = 'animation-3s fadeOut';
+        }, 1000 );
         setTimeout( function() {
             document.location.href = 'life.html';
-        }, 3000 );
+        }, 4000 );
     },
     clear: function() {
         document.getElementById("set-time").value = null;
@@ -76,4 +108,44 @@ var setPanel = {
 
 var listPanel = {
 
+}
+
+function makeDiv(text){
+    var divsize = (randNum(60,80)).toFixed();
+    // var color = '#'+ Math.round(0xffffff * Math.random()).toString(16);
+    var color = '#333'
+    $newdiv = $('<div/>').css({
+        'width':divsize+'px',
+        'height':divsize+'px',
+        'background-color': '#333',
+        'border': '5px solid #bbb',
+        'border-radius': '100%',
+        'color': 'white',
+        'font-size:': '20px',
+        'padding-top': '15px',
+        'text-align': 'center',
+        'margin-left': '10%',
+    });
+    
+    $newdiv.addClass("ball");
+    $newdiv.text(text);
+    // var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+    // var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+    var posx = (((nodeNum-1)%8)*90).toFixed();
+    var posy = (500 + Math.floor((nodeNum-1)/8)*90 - divsize).toFixed();
+    
+    $newdiv.css({
+        'position':'absolute',
+        'left':posx+'px',
+        'top':posy+'px',
+        'display':'none'
+    }).appendTo( 'body' ).fadeIn(1000)
+    // .delay(300).fadeOut(200, function(){
+    //     $(this).remove();
+    //     makeDiv(); 
+    // }); 
+}
+
+function randNum(min, max) {
+    return Math.floor(Math.random()*(max-min+1)+min);
 }
