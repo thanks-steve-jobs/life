@@ -6,7 +6,6 @@
     This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
     If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
 */
-
 .vco-storyjs {}.vco-storyjs div * {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -1650,6 +1649,7 @@
 .vco-notouch .vco-navigation .timenav .content .marker.active:hover .flag .flag-content h4, .vco-notouch .vco-navigation .timenav .content .marker.active:hover .flag-small .flag-content h4 {
     color: #999
 }
+>>>>>>> 0688db78f7d988006536ce9f860cd1ad17aaf745
 /* .vco-notouch .vco-navigation .timenav .content .marker:hover .line{z-index:24;background:#999} */
 
 .vco-notouch .vco-navigation .timenav .content .marker .flag:hover, .vco-notouch .vco-navigation .timenav .content .marker .flag-small:hover {
